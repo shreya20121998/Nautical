@@ -2,3 +2,70 @@
 .sapUshellShellHeader{
     background-color: black;
 }
+
+  .layout{
+    margin-top: -7%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid rgb(238, 234, 234);
+    
+  }
+  /* for border*/
+  #application-nauticalfe-display-component---View2--mainSplitter-content-1{
+    border: 2px solid grey;
+    height: 400px;
+}
+#application-nauticalfe-display-component---View2--mainSplitter-content-2{
+    border: 2px solid grey;
+    height: 400px;
+}
+#application-nauticalfe-display-component---View2--mainSplitter-content-0{
+    border: 2px solid grey;
+    height: 400px;
+}
+/*for button color*/
+.sapMBtnInner.sapMBtnText {
+    color: red;
+    border: 1px solid red;
+     
+}
+/*for help button color*/
+.sapUiIcon::before{
+    color: red;
+    
+}
+.sapUiSizeCompact .sapMBtnInner{
+    color: red;
+    border: 1px solid red;
+}
+#application-nauticalfe-display-component---View2--_IDGenButton3-inner{
+    background-color: red;
+    color: white;
+}
+/*for button hover*/
+.sapMBtn:hover:not(.sapMBtnDisabled):not(.sapMSBActive) >
+ .sapMBtnHoverable:not(.sapMBtnDisabled):not(.sapMBtnActive):not(.sapMToggleBtnPressed):not(.sapMBtnTransparent).sapMBtnDefault, .sapMBtn:hover:not(.sapMBtnDisabled):not(.sapMSBActive) >
+ .sapMBtnHoverable:not(.sapMBtnDisabled):not(.sapMBtnActive):not(.sapMToggleBtnPressed):not(.sapMBtnTransparent).sapMBtnBack, .sapMBtn:hover:not(.sapMBtnDisabled):not(.sapMSBActive) >
+ .sapMBtnHoverable:not(.sapMBtnDisabled):not(.sapMBtnActive):not(.sapMToggleBtnPressed):not(.sapMBtnTransparent).sapMBtnGhost {
+    color: red;
+    background-color: rgba(234, 144, 130, 0.299);
+}
+#__data15{
+    padding: 7px;
+}
+#__data17{
+    padding: 7px;
+}
+#__data18{
+    padding: 7px;
+}
+.sapMListTblCell{
+    border: 1px solid rgb(246, 243, 243);
+}
+
+
+
+
+
+
