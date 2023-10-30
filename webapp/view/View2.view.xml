@@ -77,7 +77,7 @@ xmlns:t="sap.ui.table"
         
         
       </HBox>
-        <Table id="table" items="{/Products}" growing="true" growingThreshold="10" class="color" >
+        <Table id="table" growing="true" growingThreshold="10"  >
           <columns>
            <Column id="heading1" >
              <Text id="text1" text="Port Name"/>
@@ -111,18 +111,35 @@ xmlns:t="sap.ui.table"
            </Column>
           </columns>
 
-          <items>
-           <ColumnListItem id="coloumnlist" type="Navigation" press="onNext" class="color">
+         <items>
+           <ColumnListItem id="coloumnlist">
              <cells>
-              <Text id="field1" text ="{ProductID}"/>
-              <Text id="field2" text ="{ProductName}"/>
-              <Text id="field3" text ="{SupplierID}"/>
-              <Text id="field4" text ="{UnitPrice}"/>
-              <Text id="field5" text ="{QuantityPerUnit}"/>
-              
-              
-              
+              <Text id="field1" text ="Mumbai"/>
+              <Text id="field2" text ="1625.00"/>
+              <Text id="field3" text ="2%"/>
+              <Text id="field4" text ="0.000"/>
+              <Text id="field5" text ="10"/>
+               <Text id="field6" text ="250nml"/>
+              <Text id="field7" text ="4"/>
+              <Text id="field8" text ="4"/>
+              <Text id="field9" text ="26-10-2023"/>
+              <Text id="field10" text ="16:38"/>
              </cells>
+             
+           </ColumnListItem>
+           <ColumnListItem id="_IDGenColumnListItem1">
+           <cells>
+              <Text id="field11" text ="Delhi"/>
+              <Text id="field12" text ="1625.00"/>
+              <Text id="field13" text ="2%"/>
+              <Text id="field14" text ="0.000"/>
+              <Text id="field15" text ="10"/>
+               <Text id="field16" text ="250nml"/>
+              <Text id="field17" text ="4"/>
+              <Text id="field18" text ="4"/>
+              <Text id="field19" text ="26-10-2023"/>
+              <Text id="field20" text ="16:38"/>
+            </cells>
            </ColumnListItem>
           </items>
         </Table>
