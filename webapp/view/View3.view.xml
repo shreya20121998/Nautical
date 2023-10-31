@@ -2,6 +2,13 @@
 xmlns:form="sap.ui.layout.form"
  controllerName="nauticalfe.controller.View1"
     xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+
+    <!--scrollbar added-->
+<ScrollContainer id="_IDGenScrollContainer2"
+		height="100%"
+		width="100%"
+		vertical="true"
+		focusable="true">
  
 
 
@@ -150,4 +157,6 @@ xmlns:form="sap.ui.layout.form"
         </Table>
 
     </FlexBox>
+    
+    	</ScrollContainer>
 </mvc:View>

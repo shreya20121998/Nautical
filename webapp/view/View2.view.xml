@@ -7,6 +7,12 @@ xmlns:t="sap.ui.table"
  controllerName="nauticalfe.controller.View2"
     xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
 
+<!--scrollbar added-->
+<ScrollContainer id="_IDGenScrollContainer1"
+		height="100%"
+		width="100%"
+		vertical="true"
+		focusable="true">
   <!--this is first page-->
         <l:Splitter
         id="mainSplitter"
@@ -165,5 +171,5 @@ xmlns:t="sap.ui.table"
       
       
       
-      
+   	</ScrollContainer>   
 </mvc:View>
