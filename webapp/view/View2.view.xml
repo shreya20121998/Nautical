@@ -12,6 +12,7 @@ xmlns:t="sap.ui.table"
         id="mainSplitter"
         height="500px"
         width="100%">
+        
        
         <VBox id="_IDGenVBox1">
         
@@ -26,7 +27,7 @@ xmlns:t="sap.ui.table"
                 <Label id="_IDGenLabel1" text="voyage Name"/>
                 <Input id="_IDGenInput1" value="" />
                 <Label id="_IDGenLabel2" text="Voyage Type"/>
-                <Input id="_IDGenInput2" value="" showValueHelp="true" valueHelpRequest="showValueHelpDialog"/>
+                <Input id="_IDGenInput2" value="" showValueHelp="true" valueHelpRequest=".showValueHelpDialog"/>
                 <Label id="_IDGenLabel3" text="bidding Type"/>
                 <Input id="_IDGenInput3" value="" showValueHelp="true"/>
                 <Label id="_IDGenLabel4" text="Cargo Type"/>
@@ -118,7 +119,7 @@ xmlns:t="sap.ui.table"
           </columns>
 
          <items>
-           <ColumnListItem id="coloumnlist">
+           <ColumnListItem id="coloumnlist" >
              <cells>
               <Input id="field1" value ="Mumbai"/>
               <Input id="field2" value ="1625.00"/>
@@ -128,10 +129,10 @@ xmlns:t="sap.ui.table"
                <Input id="field6" value ="250nml"/>
               <Input id="field7" value ="4"/>
               <Input id="field8" value ="4"/>
-              <Input id="field9" value ="26-10-2023"/>
-              <Input id="field10" value ="16:38"/>
-              <Input id="field21" value ="26-10-2023"/>
-              <Input id="field22" value ="26-10-2023"/>
+              <DatePicker id="DP4"	placeholder="Enter Date"	change="handleChange"	class="sapUiSmallMarginBottom" width="auto" />
+                <TimePicker id="TP1" change="handleChange" input="handleInput" formatPattern="HH:mm:ss"></TimePicker>
+              <DatePicker id="DP3"	placeholder="Enter Date"	change="handleChange"	class="sapUiSmallMarginBottom"/>
+              <TimePicker id="TP2" change="handleChange" input="handleInput" formatPattern="HH:mm:ss"></TimePicker>
               
              </cells>
              
@@ -146,8 +147,10 @@ xmlns:t="sap.ui.table"
                <Input id="field16" value ="250nml"/>
               <Input id="field17" value ="4"/>
               <Input id="field18" value ="4"/>
-              <Input id="field19" value ="26-10-2023"/>
-              <Input id="field20" value ="16:38"/>
+              <DatePicker id="DP1"	placeholder="Enter Date"	change="handleChange"	class="sapUiSmallMarginBottom"/>
+              <TimePicker id="TP3" change="handleChange" input="handleInput" formatPattern="HH:mm:ss"></TimePicker>
+              <DatePicker id="DP2"	placeholder="Enter Date"	change="handleChange"	class="sapUiSmallMarginBottom"/>
+              <TimePicker id="TP4" change="handleChange" input="handleInput" formatPattern="HH:mm:ss"></TimePicker>
             </cells>
            </ColumnListItem>
           </items>
