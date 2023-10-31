@@ -43,6 +43,11 @@
     background-color: red;
     color: white;
 }
+#container-nauticalfe---View2--_IDGenButton3-BDI-content{
+    background-color: red;
+    color: white;
+}
+
 /*for button hover*/
 .sapMBtn:hover:not(.sapMBtnDisabled):not(.sapMSBActive) >
  .sapMBtnHoverable:not(.sapMBtnDisabled):not(.sapMBtnActive):not(.sapMToggleBtnPressed):not(.sapMBtnTransparent).sapMBtnDefault, .sapMBtn:hover:not(.sapMBtnDisabled):not(.sapMSBActive) >
@@ -63,6 +68,45 @@
 .sapMListTblCell{
     border: 1px solid rgb(246, 243, 243);
 }
+
+/*for view 3 headers*/
+
+#application-nauticalfe-display-component---View3--header2{
+    background-color:white
+}
+#application-nauticalfe-display-component---View3--header3{
+    background-color:rgb(25, 134, 134);
+    height: 40px;
+}
+#application-nauticalfe-display-component---View3--header4{
+    background-color:rgb(25, 134, 134);
+    height: 40px;
+}
+#application-nauticalfe-display-component---View3--header5{
+    background-color:rgb(25, 134, 134);
+    height: 45px;
+}
+#container-nauticalfe---View3--header3{
+    background-color: rgb(18, 116, 116) !important;
+    height:45px;
+}
+#container-nauticalfe---View3--header4{
+    background-color: rgb(18, 116, 116) !important;
+    height: 40px;
+}
+#application-nauticalfe-display-component---View3--link2{
+    color:black;
+    margin-left: 45%;
+}
+
+.freighttxt{
+    color: white !important;
+}
+.freightback{
+    background-color: rgb(41, 178, 178) !important;
+    height: 40px !important;
+}
+
 
 
 

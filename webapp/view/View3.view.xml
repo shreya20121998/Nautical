@@ -1,0 +1,153 @@
+<mvc:View xmlns:tnt="sap.tnt" xmlns:cards="sap.f.cards"
+xmlns:form="sap.ui.layout.form"
+ controllerName="nauticalfe.controller.View1"
+    xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+ 
+
+
+
+  <tnt:ToolHeader id="header2"><Text id="link2" text="Freight Simulator"></Text></tnt:ToolHeader>
+ 
+
+  
+  <tnt:ToolHeader id="header3"><Text id="text31" text="Freight(Per TON)" class="freighttxt"></Text></tnt:ToolHeader>
+<tnt:ToolHeader id="_IDGenToolHeader1" class="freightback" >
+   <FlexBox id="_IDGenFlexBox1" alignItems="Center">
+    <Label id="_IDGenLabel1" text="Proposed Freight Cost:" class="freighttxt"></Label>
+    <Input id="inputProposedFreightCost"></Input>
+    <Label id="_IDGenLabel2" text="Total Cost:" class="freighttxt"></Label>
+    <Input id="inputTotalCost"></Input>
+
+    </FlexBox>
+    </tnt:ToolHeader>
+    <FlexBox id="_IDGenFlexBox2" >
+    <Table id="table" growing="true" growingThreshold="10"  >
+          <columns>
+           <Column id="heading1" >
+             <Text id="text1" text="Port Name"/>
+           </Column>
+           <Column id="heading2" >
+             <Text id="text2" text="Distance(NM)"/>
+           </Column>
+           <Column id="heading3" >
+             <Text id="text3" text="Weather%"/>
+           </Column>
+           <Column id="heading4" >
+             <Text id="text4" text="Cargo Size"/>
+           </Column>
+           <Column id="heading5" >
+             <Text id="text5" text="Frieght cost"/>
+           </Column>
+           <Column id="heading6" >
+             <Text id="text6" text="Other Cost"/>
+           </Column>
+           <Column id="heading7" >
+             <Text id="text7" text="total Projected Cost Per Port"/>
+           </Column>
+            </columns>
+
+         <items>
+           <ColumnListItem id="coloumnlist">
+             <cells>
+              <Input id="field1" value ="Mumbai"/>
+              <Input  id="field2" value ="1625.00"/>
+              <Input  id="field3" value ="2%"/>
+              <Input  id="field4" value ="0.000"/>
+              <Input  id="field5" value ="10"/>
+               <Input id="field6" value ="250nml"/>
+              <Input  id="field7" value ="4"/>
+              <Input id="field8"  value ="4"/>
+              
+              
+             </cells>
+             
+           </ColumnListItem>
+           <ColumnListItem id="_IDGenColumnListItem1">
+           <cells>
+              <Input id="field11" value ="Delhi"/>
+              <Input id="field12" value ="1625.00"/>
+              <Input id="field13" value ="2%"/>
+              <Input id="field14" value ="0.000"/>
+              <Input id="field15" value ="10"/>
+               <Input id="field16" value ="250nml"/>
+              <Input id="field17" value ="4"/>
+              <Input id="field18" value ="4"/>
+              <Input id="field19" value ="26-10-2023"/>
+              <Input id="field20" value ="16:38"/>
+            </cells>
+           </ColumnListItem>
+          </items>
+        </Table>
+
+    </FlexBox>
+<tnt:ToolHeader id="header4"><Text id="link4" text="Freight(Lumpsum )" class="freighttxt"></Text></tnt:ToolHeader>
+<tnt:ToolHeader id="_IDGenToolHeader2" class="freightback" >
+   <FlexBox id="_IDGenFlexBox21" alignItems="Center">
+    <Label id="_IDGenLabel11" text="Proposed Freight Cost:" class="freighttxt"></Label>
+    <Input id="inputProposedFreightCost1"></Input>
+    <Label id="_IDGenLabel22" text="Total Cost:" class="freighttxt"></Label>
+    <Input id="inputTotalCost1"></Input>
+
+    </FlexBox>
+    </tnt:ToolHeader>
+    <FlexBox id="_IDGenFlexBox22">
+    <Table id="table1" growing="true" growingThreshold="10"  >
+          <columns>
+           <Column id="heading11" >
+             <Text id="text11" text="Port Name"/>
+           </Column>
+           <Column id="heading12" >
+             <Text id="text12" text="Distance(NM)"/>
+           </Column>
+           <Column id="heading13" >
+             <Text id="text13" text="Weather%"/>
+           </Column>
+           <Column id="heading14" >
+             <Text id="text14" text="Cargo Size"/>
+           </Column>
+           <Column id="heading15" >
+             <Text id="text15" text="Frieght cost"/>
+           </Column>
+           <Column id="heading23" >
+             <Text id="text16" text="Other Cost"/>
+           </Column>
+           <Column id="heading27" >
+             <Text id="text17" text="total Projected Cost Per Port"/>
+           </Column>
+            </columns>
+
+         <items>
+           <ColumnListItem id="coloumnlist1">
+             <cells>
+              <Input id="field21" value ="Mumbai"/>
+              <Input id="field22" value ="1625.00"/>
+              <Input id="field23" value ="2%"/>
+              <Input id="field24" value ="0.000"/>
+              <Input id="field25" value ="10"/>
+               <Input id="field26" value ="250nml"/>
+              <Input id="field27" value ="4"/>
+              <Input id="field28" value ="4"/>
+              
+              
+             </cells>
+             
+           </ColumnListItem>
+           <ColumnListItem id="_IDGenColumnListItem3">
+           <cells>
+              <Input id="field31" value ="Delhi"/>
+              <Input id="field32" value ="1625.00"/>
+              <Input id="field33" value ="2%"/>
+              <Input id="field34" value ="0.000"/>
+              <Input id="field35" value ="10"/>
+               <Input id="field36" value ="250nml"/>
+              <Input id="field37" value ="4"/>
+              <Input id="field38" value ="4"/>
+              <Input id="field39" value ="26-10-2023"/>
+              <Input id="field40" value ="16:38"/>
+            </cells>
+           </ColumnListItem>
+          </items>
+        </Table>
+
+    </FlexBox>
+</mvc:View>
