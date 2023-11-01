@@ -14,13 +14,13 @@ xmlns:form="sap.ui.layout.form"
         </TileContent>
     </GenericTile>
  
-    <GenericTile id="_IDGenGenericTile2" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Nautical" subheader="Live Bidding Controller" press="press">
+    <GenericTile id="_IDGenGenericTile2" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Nautical" subheader="Live Bidding Controller" press=".onPress2">
         <TileContent id="_IDGenTileContent2">
            
         </TileContent>
     </GenericTile>
  
-    <GenericTile id="_IDGenGenericTile23" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Nautical" subheader="Dashboard" press="press">
+    <GenericTile id="_IDGenGenericTile23" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Nautical" subheader="Dashboard" press=".onPress3">
         <TileContent id="_IDGenTileContent3">
         <ImageContent id="_IDGenImageContent2" src="../images/pic.png"></ImageContent>
         </TileContent>

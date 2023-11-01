@@ -15,7 +15,7 @@ sap.ui.define([
       // oView.byId("_IDGenButton1").attachPress(function () {
       //   alert("Create Voyage button clicked!");
       // });
-
+      
       oView.byId("_IDGenButton2").attachPress(function () {
         alert("Freight Simulator button clicked!");
       });
@@ -31,7 +31,8 @@ sap.ui.define([
     onCreateVoyage: function() {
       const oRouter = this.getOwnerComponent().getRouter();
       oRouter.navTo("RouteView3");
-  }
+  },
+    
   });
 });
  

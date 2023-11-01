@@ -1,0 +1,7 @@
+<mvc:View xmlns:tnt="sap.tnt" xmlns:cards="sap.f.cards"
+xmlns:form="sap.ui.layout.form"
+ controllerName="nauticalfe.controller.BiddingController"
+    xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+   <tnt:ToolHeader id="header2"><Text id="heading1" text="Bidding Controller Portal " class="heading1"></Text></tnt:ToolHeader>
+</mvc:View>
+ 

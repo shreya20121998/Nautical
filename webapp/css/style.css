@@ -32,12 +32,15 @@
 }
 /*for help button color*/
 .sapUiIcon::before{
-    color: red;
+    color: rgb(245, 131, 131);
     
 }
 .sapUiSizeCompact .sapMBtnInner{
     color: red;
     border: 1px solid red;
+}
+#application-nauticalfe-display-component---View2--_IDGenButton4-inner{
+    color: red;
 }
 #application-nauticalfe-display-component---View2--_IDGenButton3-inner{
     background-color: red;
@@ -105,6 +108,10 @@
 .freightback{
     background-color: rgb(41, 178, 178) !important;
     height: 40px !important;
+}
+.heading1{
+    color:black !important;
+    margin-left: 45% !important; 
 }
 
 
