@@ -12,23 +12,23 @@ xmlns:f="sap.f"
     vertical="true"
     focusable="true">
    <FlexBox id="biddingTileflexId" class="biddingTileflex">
-   <GenericTile id="openTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Open" subheader="Bids" press="press">
+   <GenericTile id="openTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout Tile" header="Open" subheader="Bids" press="press">
 		<TileContent id="openTile">
 			<NumericContent id="openTileNumericId" value="0" icon="sap-icon://open-folder" withMargin="false" />
 		</TileContent>
 	</GenericTile>
 
-	<GenericTile id="closeTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Close" subheader="Bids" press="press">
+	<GenericTile id="closeTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout Tile" header="Close" subheader="Bids" press="press">
 		<TileContent id="closeTile">
 			<NumericContent id="closeTileNumericId" value="4" icon="sap-icon://folder-full" withMargin="false" />
 		</TileContent>
 	</GenericTile> 
-   <GenericTile id="ongoingTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Ongoing" subheader="Bids" press="press">
+   <GenericTile id="ongoingTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout Tile" header="Ongoing" subheader="Bids" press="press">
 		<TileContent id="ongoingTile" >
 			<NumericContent id="ongoingTileNumericId" value="2" icon="sap-icon://away" withMargin="false" />
 		</TileContent>
 	</GenericTile> 
-   <GenericTile id="allTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="All" subheader="Bids" press="press">
+   <GenericTile id="allTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout Tile" header="All" subheader="Bids" press="press">
 		<TileContent id="allTile" >
 			<NumericContent id="allTileNumericId" value="18" icon="sap-icon://browse-folder" withMargin="false" />
 		</TileContent>
@@ -64,12 +64,12 @@ xmlns:f="sap.f"
 		  <items >
            <ColumnListItem id="coloumnlist"  type="Navigation" press="onNext">
              <cells>
-              <Text id="bfield1" text = "{bidData>ProductName}"/>
-              <Text id="bfield2" text = "{bidData>Quantity}"/>
-              <Text id="bfield3" text ="{bidData>Status}"/>
-              <Text id="bfield4" text ="{bidData>ShippedDate}"/>
-              <Text id="bfield5" text ="{bidData>ShippedDate}"/>
-               <Text id="bfield6" text ="{bidData>ShipperName}"/>
+              <Text id="bfield1" text = "{bidData>Chartering Req No.}"/>
+              <Text id="bfield2" text = "{bidData>Bid Start Date}"/>
+              <Text id="bfield3" text ="{bidData>Bid Start Time}"/>
+              <Text id="bfield4" text ="{bidData>Bid End Date}"/>
+              <Text id="bfield5" text ="{bidData>Bid End Time}"/>
+               <Text id="bfield6" text ="{bidData>Status}"/>
 			   </cells>
 			   </ColumnListItem>
 			  </items>
