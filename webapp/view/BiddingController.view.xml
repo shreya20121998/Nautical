@@ -1,7 +1,113 @@
 <mvc:View xmlns:tnt="sap.tnt" xmlns:cards="sap.f.cards"
 xmlns:form="sap.ui.layout.form"
+xmlns:f="sap.f"
  controllerName="nauticalfe.controller.BiddingController"
     xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
-   <tnt:ToolHeader id="header2"><Text id="heading1" text="Bidding Controller Portal " class="heading1"></Text></tnt:ToolHeader>
+   <tnt:ToolHeader id="header2"><Text id="Bidheading" text="Bidding Controller Portal " class="heading1"></Text></tnt:ToolHeader>
+   
+   <FlexBox id="biddingTileflexId" class="biddingTileflex">
+   <GenericTile id="openTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Open" subheader="Bids" press="press">
+		<TileContent id="openTile">
+			<NumericContent id="openTileNumericId" value="0" icon="sap-icon://open-folder" withMargin="false" />
+		</TileContent>
+	</GenericTile>
+
+	<GenericTile id="closeTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Close" subheader="Bids" press="press">
+		<TileContent id="closeTile">
+			<NumericContent id="closeTileNumericId" value="4" icon="sap-icon://folder-full" withMargin="false" />
+		</TileContent>
+	</GenericTile> 
+   <GenericTile id="ongoingTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Ongoing" subheader="Bids" press="press">
+		<TileContent id="ongoingTile" >
+			<NumericContent id="ongoingTileNumericId" value="2" icon="sap-icon://away" withMargin="false" />
+		</TileContent>
+	</GenericTile> 
+   <GenericTile id="allTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="All" subheader="Bids" press="press">
+		<TileContent id="allTile" >
+			<NumericContent id="allTileNumericId" value="18" icon="sap-icon://browse-folder" withMargin="false" />
+		</TileContent>
+	</GenericTile> 
+   </FlexBox>
+   
+   
+   
+   
+   <Panel  headerText="Ongoing Bids" class="ongoingPanelPanel">
+   
+   <Table id="table" growing="true" growingThreshold="10" >
+          <columns>
+           <Column id="bheading1" >
+             <Text id="text1" text="Chartering Req No."/>
+           </Column>
+           <Column id="bheading2" >
+             <Text id="text2" text="Bid Start Date"/>
+           </Column>
+           <Column id="bheading3" >
+             <Text id="text3" text="Bid Start Time"/>
+           </Column>
+           <Column id="bheading4" >
+             <Text id="text4" text="Bid End Date"/>
+           </Column>
+           <Column id="bheading5" >
+             <Text id="text5" text="Bid End Time"/>
+           </Column>
+           <Column id="bheading6" >
+             <Text id="text6" text="Status"/>
+			 </Column>
+          </columns>
+		  <items >
+           <ColumnListItem id="coloumnlist"  type="Navigation" press="onNext">
+             <cells>
+              <Text id="bfield1" text ="4000000049"/>
+              <Text id="bfield2" text ="01-11-2023"/>
+              <Text id="bfield3" text ="15:00"/>
+              <Text id="bfield4" text ="01-11-2023"/>
+              <Text id="bfield5" text ="16:00"/>
+               <Text id="bfield6" text =""/>
+			   </cells>
+			   </ColumnListItem>
+			   <ColumnListItem id="biddingcolumnlist2" type="Navigation" press="onNext">
+            <cells>
+                <Text id="biddingtxt7"  text ="4000000049"/>
+                <Text id="biddingtxt8"  text ="2023-11-01"/>
+                <Text id="biddingtxt9"  text ="15:06:45"/>
+                <Text id="biddingtxt10"  text ="2023-11-01"/>
+                <Text id="biddingtxt11"  text ="15:20:51"/>
+                <Text id="biddingtxt12"  text =""/>
+            </cells>
+           </ColumnListItem>
+		   <ColumnListItem id="biddingcolumnlist3" type="Navigation" press="onNext">
+            <cells>
+                <Text id="biddingtxt17"  text ="4000000049"/>
+                <Text id="biddingtxt18"  text ="2023-11-01"/>
+                <Text id="biddingtxt19"  text ="15:06:45"/>
+                <Text id="biddingtxt20"  text ="2023-11-01"/>
+                <Text id="biddingtxt21"  text ="15:20:51"/>
+                <Text id="biddingtxt22"  text =""/>
+            </cells>
+           </ColumnListItem>
+		   <ColumnListItem id="biddingcolumnlist4" type="Navigation" press="onNext">
+            <cells>
+                <Text id="biddingtxt27"  text ="4000000049"/>
+                <Text id="biddingtxt28"  text ="2023-11-01"/>
+                <Text id="biddingtxt29"  text ="15:06:45"/>
+                <Text id="biddingtxt30"  text ="2023-11-01"/>
+                <Text id="biddingtxt31"  text ="15:20:51"/>
+                <Text id="biddingtxt32"  text =""/>
+            </cells>
+           </ColumnListItem>
+		   <ColumnListItem id="biddingcolumnlist5" type="Navigation" press="onNext">
+            <cells>
+                <Text id="biddingtxt37"  text ="4000000049"/>
+                <Text id="biddingtxt38"  text ="2023-11-01"/>
+                <Text id="biddingtxt39"  text ="15:06:45"/>
+                <Text id="biddingtxt40"  text ="2023-11-01"/>
+                <Text id="biddingtxt41"  text ="15:20:51"/>
+                <Text id="biddingtxt42"  text =""/>
+            </cells>
+           </ColumnListItem>
+          </items>
+        </Table>
+		</Panel>
 </mvc:View>
  

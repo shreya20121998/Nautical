@@ -1,6 +1,6 @@
 <mvc:View xmlns:tnt="sap.tnt"
 xmlns:form="sap.ui.layout.form"
-xmlns:t="sap.ui.table"
+
 
 
  xmlns:l="sap.ui.layout"

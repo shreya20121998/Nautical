@@ -31,10 +31,31 @@
      
 }
 /*for help button color*/
-.sapUiIcon::before{
+/*.sapUiIcon::before{
     color: rgb(245, 131, 131);
     
+}*/
+#application-nauticalfe-display-component---View2--_IDGenButton4-img{
+    color: red; /*for refresh button*/
 }
+
+/*for value help button*/
+#application-nauticalfe-display-component---View2--_IDGenInput2-vhi{
+    color: rgb(245, 131, 131);
+}
+#application-nauticalfe-display-component---View2--_IDGenInput3-vhi{
+    color: rgb(245, 131, 131);
+}
+#application-nauticalfe-display-component---View2--_IDGenInput4-vhi{
+    color: rgb(245, 131, 131);
+}
+#application-nauticalfe-display-component---View2--_IDGenInput5-vhi{
+    color: rgb(245, 131, 131);
+}
+/*------------*/
+
+
+
 .sapUiSizeCompact .sapMBtnInner{
     color: red;
     border: 1px solid red;
@@ -114,8 +135,33 @@
     margin-left: 45% !important; 
 }
 
+.biddingTileflex{
+    justify-content: space-around;
+    justify-content: center;
+}
+
+/* bid page icon */
+#application-nauticalfe-display-component---BiddingController--openTileNumericId-value-inner{
+    color: orange;
+    
+}
+#application-nauticalfe-display-component---BiddingController--closeTileNumericId-value-inner{
+    color: green;
+}
+#application-nauticalfe-display-component---BiddingController--ongoingTileNumericId-value-inner{
+    color: orange;
+}
 
 
+.sapMListTblSelCol, .sapMListTblCell, .sapMListTblNavCol {
+    border: none;
+}
+.ongoingPanelPanel{
+    padding: 30px;
+}
+#__panel0-header{
+    border-bottom: none;
+}
 
 
 
