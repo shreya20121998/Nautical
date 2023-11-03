@@ -3,8 +3,14 @@ xmlns:form="sap.ui.layout.form"
 xmlns:f="sap.f"
  controllerName="nauticalfe.controller.BiddingController"
     xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+    <!--scrollbar added-->
+
    <tnt:ToolHeader id="header2"><Text id="Bidheading" text="Bidding Controller Portal " class="heading1"></Text></tnt:ToolHeader>
-   
+   <ScrollContainer id="_IDGenScrollContainer2"
+    height="100%"
+    width="100%"
+    vertical="true"
+    focusable="true">
    <FlexBox id="biddingTileflexId" class="biddingTileflex">
    <GenericTile id="openTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Open" subheader="Bids" press="press">
 		<TileContent id="openTile">
@@ -109,5 +115,6 @@ xmlns:f="sap.f"
           </items>
         </Table>
 		</Panel>
+    </ScrollContainer>
 </mvc:View>
  

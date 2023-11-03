@@ -158,11 +158,27 @@
 }
 .ongoingPanelPanel{
     padding: 30px;
+    border:1px solid black;
+    background-color: white;
+    padding: 30px;
+    margin: 1%;
+    border-radius: 0%;
+    margin-right: 5%;
 }
 #__panel0-header{
     border-bottom: none;
 }
 
+.sapMColumnHeader {
+    background-color: rgb(240, 235, 235);
+    border-top: 1px solid rgb(187, 186, 186);
+}
+#application-nauticalfe-display-component---BiddingController--table-tblHeadNav{
+    background-color: rgb(240, 235, 235);
+    border-top: 1px solid rgb(187, 186, 186);
 
-
+}
+#application-nauticalfe-display-component---BiddingController--header2{
+    border-bottom: 1px solid rgb(187, 186, 186);
+}
 
