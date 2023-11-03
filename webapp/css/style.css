@@ -141,14 +141,14 @@
 }
 
 /* bid page icon */
-#application-nauticalfe-display-component---BiddingController--openTileNumericId-value-inner{
+#application-nauticalfe-display-component---BidCont--openTileNumericId-value-inner{
     color: orange;
     
 }
-#application-nauticalfe-display-component---BiddingController--closeTileNumericId-value-inner{
+#application-nauticalfe-display-component---BidCont--closeTileNumericId-value-inner{
     color: green;
 }
-#application-nauticalfe-display-component---BiddingController--ongoingTileNumericId-value-inner{
+#application-nauticalfe-display-component---BidCont--ongoingTileNumericId-value-inner{
     color: orange;
 }
 
