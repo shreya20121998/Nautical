@@ -7,7 +7,7 @@ sap.ui.define([
     function (Controller) {
         "use strict";
  
-        return Controller.extend("nauticalfe.controller.BiddingController", {
+        return Controller.extend("nauticalfe.controller.BidObj", {
             onInit: function () {
  
             },

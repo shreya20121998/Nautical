@@ -1,0 +1,9 @@
+<mvc:View xmlns:tnt="sap.tnt" xmlns:cards="sap.f.cards"
+xmlns:form="sap.ui.layout.form"
+xmlns:f="sap.f"
+ controllerName="nauticalfe.controller.BidObj"
+    xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+    <Page >
+    <Text text="hello"></Text>
+    </Page>
+    </mvc:View>

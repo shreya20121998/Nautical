@@ -7,18 +7,15 @@ sap.ui.define([
     function (Controller) {
         "use strict";
  
-        return Controller.extend("nauticalfe.controller.View1", {
+        return Controller.extend("nauticalfe.controller.BidCont", {
             onInit: function () {
  
             },
-           
-            onPress: function() {
+            onNext: function() {
                 const oRouter = this.getOwnerComponent().getRouter();
-                oRouter.navTo("RouteView2");
+                oRouter.navTo("RouteBidObj");
             },
-            onPress2: function() {
-                const oRouter = this.getOwnerComponent().getRouter();
-                oRouter.navTo("RouteBidCont");
-            }
+           
+            
         });
     });

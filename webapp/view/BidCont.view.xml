@@ -1,7 +1,7 @@
 <mvc:View xmlns:tnt="sap.tnt" xmlns:cards="sap.f.cards"
 xmlns:form="sap.ui.layout.form"
 xmlns:f="sap.f"
- controllerName="nauticalfe.controller.BiddingController"
+ controllerName="nauticalfe.controller.BidCont"
     xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
     <!--scrollbar added-->
 
@@ -40,7 +40,7 @@ xmlns:f="sap.f"
    
    <Panel  headerText="Ongoing Bids" class="ongoingPanelPanel">
    
-   <Table id="table" growing="true" growingThreshold="10" >
+   <Table id="table" items="{bidData>/biddingData}" growing="true" growingThreshold="10" >
           <columns>
            <Column id="bheading1" >
              <Text id="text1" text="Chartering Req No."/>
@@ -64,55 +64,15 @@ xmlns:f="sap.f"
 		  <items >
            <ColumnListItem id="coloumnlist"  type="Navigation" press="onNext">
              <cells>
-              <Text id="bfield1" text ="4000000049"/>
-              <Text id="bfield2" text ="01-11-2023"/>
-              <Text id="bfield3" text ="15:00"/>
-              <Text id="bfield4" text ="01-11-2023"/>
-              <Text id="bfield5" text ="16:00"/>
-               <Text id="bfield6" text =""/>
+              <Text id="bfield1" text = "{bidData>ProductName}"/>
+              <Text id="bfield2" text = "{bidData>Quantity}"/>
+              <Text id="bfield3" text ="{bidData>Status}"/>
+              <Text id="bfield4" text ="{bidData>ShippedDate}"/>
+              <Text id="bfield5" text ="{bidData>ShippedDate}"/>
+               <Text id="bfield6" text ="{bidData>ShipperName}"/>
 			   </cells>
 			   </ColumnListItem>
-			   <ColumnListItem id="biddingcolumnlist2" type="Navigation" press="onNext">
-            <cells>
-                <Text id="biddingtxt7"  text ="4000000049"/>
-                <Text id="biddingtxt8"  text ="2023-11-01"/>
-                <Text id="biddingtxt9"  text ="15:06:45"/>
-                <Text id="biddingtxt10"  text ="2023-11-01"/>
-                <Text id="biddingtxt11"  text ="15:20:51"/>
-                <Text id="biddingtxt12"  text =""/>
-            </cells>
-           </ColumnListItem>
-		   <ColumnListItem id="biddingcolumnlist3" type="Navigation" press="onNext">
-            <cells>
-                <Text id="biddingtxt17"  text ="4000000049"/>
-                <Text id="biddingtxt18"  text ="2023-11-01"/>
-                <Text id="biddingtxt19"  text ="15:06:45"/>
-                <Text id="biddingtxt20"  text ="2023-11-01"/>
-                <Text id="biddingtxt21"  text ="15:20:51"/>
-                <Text id="biddingtxt22"  text =""/>
-            </cells>
-           </ColumnListItem>
-		   <ColumnListItem id="biddingcolumnlist4" type="Navigation" press="onNext">
-            <cells>
-                <Text id="biddingtxt27"  text ="4000000049"/>
-                <Text id="biddingtxt28"  text ="2023-11-01"/>
-                <Text id="biddingtxt29"  text ="15:06:45"/>
-                <Text id="biddingtxt30"  text ="2023-11-01"/>
-                <Text id="biddingtxt31"  text ="15:20:51"/>
-                <Text id="biddingtxt32"  text =""/>
-            </cells>
-           </ColumnListItem>
-		   <ColumnListItem id="biddingcolumnlist5" type="Navigation" press="onNext">
-            <cells>
-                <Text id="biddingtxt37"  text ="4000000049"/>
-                <Text id="biddingtxt38"  text ="2023-11-01"/>
-                <Text id="biddingtxt39"  text ="15:06:45"/>
-                <Text id="biddingtxt40"  text ="2023-11-01"/>
-                <Text id="biddingtxt41"  text ="15:20:51"/>
-                <Text id="biddingtxt42"  text =""/>
-            </cells>
-           </ColumnListItem>
-          </items>
+			  </items>
         </Table>
 		</Panel>
     </ScrollContainer>
