@@ -11,10 +11,14 @@ sap.ui.define([
             onInit: function () {
  
             },
-            onNext: function() {
+            onPressBidTableData(oEvent) {
+                const oItem = oEvent.getSource();
                 const oRouter = this.getOwnerComponent().getRouter();
-                oRouter.navTo("RouteBidObj");
-            },
+                oRouter.navTo("RouteBidObj", {
+                    bidObjPath: window.encodeURIComponent(oItem.getBindingContext("bidData").getPath().substr(1))
+                });
+            }
+
            
             
         });

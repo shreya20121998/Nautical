@@ -61,6 +61,10 @@
       "bidData":{
         "type": "sap.ui.model.json.JSONModel",
         "uri": "Bid.json"
+      },
+      "Vdata":{
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "Voyage.json"
       }
     },
     "resources": {
@@ -111,7 +115,7 @@
         },
         {
           "name": "RouteBidObj",
-          "pattern": "BiddingObject",
+          "pattern": "BiddingObject/{bidObjPath}",
           "target": [
             "TargetBidObj"
           ]

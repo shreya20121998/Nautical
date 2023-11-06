@@ -38,7 +38,7 @@ xmlns:f="sap.f"
    
    
    
-   <Panel  headerText="Ongoing Bids" class="ongoingPanelPanel">
+   <Panel id="PanelId"  headerText="Ongoing Bids" class="ongoingPanelPanel " width="auto">
    
    <Table id="table" items="{bidData>/biddingData}" growing="true" growingThreshold="10" >
           <columns>
@@ -62,7 +62,7 @@ xmlns:f="sap.f"
 			 </Column>
           </columns>
 		  <items >
-           <ColumnListItem id="coloumnlist"  type="Navigation" press="onNext">
+           <ColumnListItem id="coloumnlist"  type="Navigation" press="onPressBidTableData">
              <cells>
               <Text id="bfield1" text = "{bidData>Chartering Req No.}"/>
               <Text id="bfield2" text = "{bidData>Bid Start Date}"/>

@@ -135,6 +135,8 @@
     margin-left: 45% !important; 
 }
 
+/* bidding controller page*/
+
 .biddingTileflex{
     justify-content: space-around;
     justify-content: center;
@@ -165,7 +167,7 @@
     border-radius: 0%;
     margin-right: 5%;
 }
-#__panel0-header{
+#application-nauticalfe-display-component---BidCont--PanelId-header{
     border-bottom: none;
 }
 
@@ -184,4 +186,29 @@
 }
 .Tile{
     border-radius: 0%;
+}
+/* for bid obj page*/
+.bpanel1{
+    width: 20rem ;
+}
+
+.vPanel{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.text1{
+    display: block;
+}
+.botxt2{
+    margin-top: 15%;
+}
+.botxt3{
+    margin-top: 5%!important;
+}
+.botxt1{
+   margin-top: 3%;
+   font-size: 22px;
 }

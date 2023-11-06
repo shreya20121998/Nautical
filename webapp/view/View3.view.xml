@@ -28,7 +28,7 @@ xmlns:form="sap.ui.layout.form"
     </FlexBox>
     </tnt:ToolHeader>
     <FlexBox id="_IDGenFlexBox2" >
-    <Table id="table" growing="true" growingThreshold="10"  >
+    <Table id="table" items="{Vdata>/freightData1}" growing="true" growingThreshold="10"  >
           <columns>
            <Column id="heading1" >
              <Text id="text1" text="Port Name"/>
@@ -36,9 +36,7 @@ xmlns:form="sap.ui.layout.form"
            <Column id="heading2" >
              <Text id="text2" text="Distance(NM)"/>
            </Column>
-           <Column id="heading3" >
-             <Text id="text3" text="Weather%"/>
-           </Column>
+           
            <Column id="heading4" >
              <Text id="text4" text="Cargo Size"/>
            </Column>
@@ -56,34 +54,19 @@ xmlns:form="sap.ui.layout.form"
          <items>
            <ColumnListItem id="coloumnlist">
              <cells>
-              <Input id="field1" value ="Mumbai"/>
-              <Input  id="field2" value ="1625.00"/>
-              <Input  id="field3" value ="2%"/>
-              <Input  id="field4" value ="0.000"/>
-              <Input  id="field5" value ="10"/>
-               <Input id="field6" value ="250nml"/>
-              <Input  id="field7" value ="4"/>
-              <Input id="field8"  value ="4"/>
+              <Input id="field1" value ="{Vdata>Port Name}"/>
+              <Input  id="field2" value ="{Vdata>Distance(NM)}"/>
+              <Input  id="field3" value ="{Vdata>Cargo Size}"/>
+              <Input  id="field4" value ="{Vdata>Freight Cost}"/>
+              <Input  id="field5" value ="{Vdata>Other Cost}"/>
+               <Input id="field6" value ="{Vdata>Total Projected Cost per Port}"/>
+              
               
               
              </cells>
              
            </ColumnListItem>
-           <ColumnListItem id="_IDGenColumnListItem1">
-           <cells>
-              <Input id="field11" value ="Delhi"/>
-              <Input id="field12" value ="1625.00"/>
-              <Input id="field13" value ="2%"/>
-              <Input id="field14" value ="0.000"/>
-              <Input id="field15" value ="10"/>
-               <Input id="field16" value ="250nml"/>
-              <Input id="field17" value ="4"/>
-              <Input id="field18" value ="4"/>
-              <Input id="field19" value ="26-10-2023"/>
-              <Input id="field20" value ="16:38"/>
-            </cells>
-           </ColumnListItem>
-          </items>
+             </items>
         </Table>
 
     </FlexBox>
@@ -98,7 +81,7 @@ xmlns:form="sap.ui.layout.form"
     </FlexBox>
     </tnt:ToolHeader>
     <FlexBox id="_IDGenFlexBox22">
-    <Table id="table1" growing="true" growingThreshold="10"  >
+    <Table id="table1" items="{Vdata>/freightData2}" growing="true" growingThreshold="10"  >
           <columns>
            <Column id="heading11" >
              <Text id="text11" text="Port Name"/>
@@ -106,9 +89,7 @@ xmlns:form="sap.ui.layout.form"
            <Column id="heading12" >
              <Text id="text12" text="Distance(NM)"/>
            </Column>
-           <Column id="heading13" >
-             <Text id="text13" text="Weather%"/>
-           </Column>
+           
            <Column id="heading14" >
              <Text id="text14" text="Cargo Size"/>
            </Column>
@@ -126,33 +107,19 @@ xmlns:form="sap.ui.layout.form"
          <items>
            <ColumnListItem id="coloumnlist1">
              <cells>
-              <Input id="field21" value ="Mumbai"/>
-              <Input id="field22" value ="1625.00"/>
-              <Input id="field23" value ="2%"/>
-              <Input id="field24" value ="0.000"/>
-              <Input id="field25" value ="10"/>
-               <Input id="field26" value ="250nml"/>
-              <Input id="field27" value ="4"/>
-              <Input id="field28" value ="4"/>
+              <Input id="field21" value ="{Vdata>Port Name}"/>
+              <Input id="field22" value ="{Vdata>Distance(NM)}"/>
+              <Input id="field23" value ="{Vdata>Cargo Size}"/>
+              <Input id="field24" value ="{Vdata>Freight Cost}"/>
+              <Input id="field25" value ="{Vdata>Other Cost}"/>
+               <Input id="field26" value ="{Vdata>Total Projected Cost per Port}"/>
+              
               
               
              </cells>
              
            </ColumnListItem>
-           <ColumnListItem id="_IDGenColumnListItem3">
-           <cells>
-              <Input id="field31" value ="Delhi"/>
-              <Input id="field32" value ="1625.00"/>
-              <Input id="field33" value ="2%"/>
-              <Input id="field34" value ="0.000"/>
-              <Input id="field35" value ="10"/>
-               <Input id="field36" value ="250nml"/>
-              <Input id="field37" value ="4"/>
-              <Input id="field38" value ="4"/>
-              <Input id="field39" value ="26-10-2023"/>
-              <Input id="field40" value ="16:38"/>
-            </cells>
-           </ColumnListItem>
+           
           </items>
         </Table>
 
