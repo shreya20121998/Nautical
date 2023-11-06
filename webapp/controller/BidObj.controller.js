@@ -17,10 +17,7 @@ sap.ui.define([
                     path: "/" + window.decodeURIComponent(oEvent.getParameter("arguments").bidObjPath),
                     model: "bidData"
                 });
-            },
-            Testing(oEvent) {
-                
-            },
+            }
 
             
             

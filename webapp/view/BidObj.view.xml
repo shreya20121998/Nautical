@@ -27,6 +27,22 @@ xmlns:f="sap.f"
 
    </VBox>
    
+<HBox class="vendorListHeading">
+        <FlexBox >
+            <Label id="Label3" text="Vendor List for Charter Request-"/>
+            <Text id="boTxt01" class="botxt3" text="{bidData>Chartering Req No.}"></Text>
+        </FlexBox>
+        <FlexBox>
+            <Label class="cql1" text="Current Quote"/>
+            <Input value="{biddata>Original Bid}"></Input>
+        </FlexBox>
+        <FlexBox>
+            <Label class="cql1" text="Quote Price:"/>
+            <Input value="{biddata>Original Bid}"></Input>
+            <Button text="Submit"></Button>
+        </FlexBox>
+    </HBox>
+   
    
    
 
