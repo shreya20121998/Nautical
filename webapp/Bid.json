@@ -6,7 +6,23 @@
             "Bid Start Time": "15:06:45",
             "Bid End Date": "2023-11-01",
             "Bid End Time": "15:20:51",
+            "Status": "open"
+        },
+        {
+            "Chartering Req No.": "4000000049",
+            "Bid Start Date": "2023-11-01",
+            "Bid Start Time": "15:06:45",
+            "Bid End Date": "2023-11-01",
+            "Bid End Time": "15:20:51",
             "Status": "Closed"
+        },
+        {
+            "Chartering Req No.": "4000000049",
+            "Bid Start Date": "2023-11-01",
+            "Bid Start Time": "15:06:45",
+            "Bid End Date": "2023-11-01",
+            "Bid End Time": "15:20:51",
+            "Status": "Ongoing"
         },
         {
             "Chartering Req No.": "4000000049",
@@ -38,7 +54,7 @@
             "Bid Start Time": "15:06:45",
             "Bid End Date": "2023-11-01",
             "Bid End Time": "15:20:51",
-            "Status": "Closed"
+            "Status": "open"
         },
         {
             "Chartering Req No.": "4000000049",
@@ -62,23 +78,7 @@
             "Bid Start Time": "15:06:45",
             "Bid End Date": "2023-11-01",
             "Bid End Time": "15:20:51",
-            "Status": "Closed"
-        },
-        {
-            "Chartering Req No.": "4000000049",
-            "Bid Start Date": "2023-11-01",
-            "Bid Start Time": "15:06:45",
-            "Bid End Date": "2023-11-01",
-            "Bid End Time": "15:20:51",
-            "Status": "Closed"
-        },
-        {
-            "Chartering Req No.": "4000000049",
-            "Bid Start Date": "2023-11-01",
-            "Bid Start Time": "15:06:45",
-            "Bid End Date": "2023-11-01",
-            "Bid End Time": "15:20:51",
-            "Status": "Closed"
+            "Status": "open"
         },
         {
             "Chartering Req No.": "4000000049",

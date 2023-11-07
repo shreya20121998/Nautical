@@ -207,6 +207,7 @@
 }
 .botxt3{
     margin-top: 5%!important;
+    font-size: 19px;
 }
 .botxt1{
    margin-top: 3%;
@@ -225,5 +226,8 @@
 .cql1{
     padding-top:8px;
 }
+#application-nauticalfe-display-component---BidObj--table-tblHeadNav{
+    background-color: rgb(240, 235, 235);
+    border-top: 1px solid rgb(187, 186, 186);
 
-
+}

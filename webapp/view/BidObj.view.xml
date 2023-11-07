@@ -4,7 +4,7 @@ xmlns:f="sap.f"
  controllerName="nauticalfe.controller.BidObj"
     xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
    <tnt:ToolHeader id="header2"><Text id="Bidheading" text="Bidding Controller Portal " class="heading1"></Text></tnt:ToolHeader>
-   
+   <!--for panels-->
    <VBox id="vPanel1" class = "vPanel">
 
    <Panel id="bPanel1" class="bpanel1 sapUiResponsiveMargin">
@@ -16,20 +16,22 @@ xmlns:f="sap.f"
     <Text id="boTxt3" class="botxt3 text1 " text="Bid To: {bidData>Bid End Date} {bidData>Bid End Time}"/>
    
    </Panel>
-   
+   <!-- panel 2-->
    <Panel id="bPanel2" class="bpanel2 sapUiResponsiveMargin"  >
 
     <Label id="Label01" text="Leading Commercial Rank" />
     <Text id="boTxt4" class="text1" text="{bidData>Technical Score}"></Text>
     <Text id="boTxt5" class="botxt5" text="Quote: {bidData>Current Bid} "/>
+    <Text id="boTxt6" class="botxt2 text1" text="{bidData>Vendors} "/>
+    <Text id="boTxt7" class="botxt2 text1" text="Technical Score : {bidData>Technical Score} "/>
     
    </Panel>
 
    </VBox>
-   
+    <!--for text area and buttons -->
 <HBox class="vendorListHeading">
         <FlexBox >
-            <Label id="Label3" text="Vendor List for Charter Request-"/>
+            <Label id="Label3" class="botxt3"  text="Vendor List for Charter Request-"/>
             <Text id="boTxt01" class="botxt3" text="{bidData>Chartering Req No.}"></Text>
         </FlexBox>
         <FlexBox>
@@ -66,7 +68,7 @@ xmlns:f="sap.f"
            
           </columns>
 		  <items >
-           <ColumnListItem id="coloumnlist"  type="Navigation" press="Testing">
+           <ColumnListItem id="coloumnlist"   press="Testing">
              <cells>
               <Text id="bfield1" text = "{bidData>Vendors}"/>
               <Text id="bfield2" text = "{bidData>Technical Score}"/>
