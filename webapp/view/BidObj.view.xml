@@ -24,7 +24,7 @@ xmlns:f="sap.f"
     
     <Text id="boTxt5" class="botxt5 text1 " text=""/>
     <Text id="boTxt4" class="text1" text=""></Text>
-    <Text id="boTxt6" class="text1 " text=""/>
+    <Text id="boTxt6" class="text1  " text=""/>
     <Text id="boTxt7" class="text1 " text=""/>
    
    </Panel>

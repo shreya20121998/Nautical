@@ -27,6 +27,7 @@ xmlns:form="sap.ui.layout.form"
 
     </FlexBox>
     </tnt:ToolHeader>
+    
     <FlexBox id="_IDGenFlexBox2" >
     <Table id="table" items="{Vdata>/freightData1}" growing="true" growingThreshold="10"  >
           <columns>

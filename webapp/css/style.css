@@ -231,7 +231,11 @@
     border-top: 1px solid rgb(187, 186, 186);
 
 }
-
+#application-nauticalfe-display-component---BidObj--boTxt6{
+    color: green;
+    margin-top: 15%;
+    font-size: 24px;
+}
 /*dashboard*/
 .vPanel{
     display: flex;
