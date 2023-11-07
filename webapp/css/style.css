@@ -207,7 +207,7 @@
 }
 .botxt3{
     margin-top: 5%!important;
-    font-size: 19px;
+    
 }
 .botxt1{
    margin-top: 3%;
@@ -231,3 +231,24 @@
     border-top: 1px solid rgb(187, 186, 186);
 
 }
+
+/*dashboard*/
+.vPanel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5 rem;
+}
+.panel{
+    padding: 40px;
+}
+.panel1{
+  margin-top: 8%;
+}
+.Trans{
+    padding: 10%; margin: 10% 15%;
+}
+.Mastr{
+    padding: 10%; margin: 10% 15%;
+}
+

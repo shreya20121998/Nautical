@@ -119,6 +119,13 @@
           "target": [
             "TargetBidObj"
           ]
+        },
+        {
+          "name": "Routedash",
+          "pattern": "dashboard",
+          "target": [
+            "Targetdash"
+          ]
         }
       ],
       "targets": {
@@ -156,6 +163,13 @@
           "clearControlAggregation": false,
           "viewId": "BidObj",
           "viewName": "BidObj"
+        },
+        "Targetdash": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "dash",
+          "viewName": "dash"
         }
       }
     },

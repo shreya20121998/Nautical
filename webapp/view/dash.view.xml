@@ -1,0 +1,36 @@
+<mvc:View xmlns:tnt="sap.tnt"
+xmlns:form="sap.ui.layout.form"
+
+
+
+ xmlns:l="sap.ui.layout"
+ controllerName="nauticalfe.controller.dash"
+    xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+
+    <Page id="_IDGenPage1">
+    
+     <VBox id="_IDGenVBox1" class="vPanel">
+        
+           <Panel id="_IDGenPanel1" class="panel" width="650px" height="650px">
+            
+            <ObjectListItem id="_IDGenObjectListItem1" intro="Select Transaction Type" ></ObjectListItem>
+ 
+         <Button id="_IDGenButton1" text="Transaction Data" press="TransData" class="Trans" width="30%" icon="sap-icon://request"></Button>
+         
+     <Button id="_IDGenButton2" text="Master Data" press="MastData" class="Mastr" width="30%" icon="sap-icon://visits"></Button>
+               </Panel>   
+            
+        
+
+        
+        <Panel id="_IDGenPanel2"  class="panel1">
+        <Image id="_IDGenImage1" src="https://www.shutterstock.com/image-photo/container-ship-vessel-cargo-carrier-260nw-1457257346.jpg" width="600px" height="500px" class="img"></Image>
+        </Panel>
+        </VBox>
+
+       </Page>
+
+   
+    
+
+   </mvc:View> 
