@@ -31,19 +31,19 @@ xmlns:f="sap.f"
  
    </VBox>
    
-<HBox class="vendorListHeading">
-        <FlexBox >
+<HBox id="HBox1" class="vendorListHeading">
+        <FlexBox id="FlexBox1" >
             <Label id="Label3" text="Vendor List for Charter Request-"/>
             <Text id="boTxt01" class="botxt3" text="{bidData>Chartering Req No.}"></Text>
         </FlexBox>
-        <FlexBox>
-            <Label class="cql1" text="Current Quote"/>
+        <FlexBox id="FlexBox2">
+            <Label id="Label10" class="cql1" text="Current Quote"/>
             <Input id="QuoteValue" value=""></Input>
         </FlexBox>
-        <FlexBox>
-            <Label class="cql1" text="Quote Price:"/>
-            <Input value="{biddata>Original Bid}"></Input>
-            <Button text="Submit"></Button>
+        <FlexBox id="FlexBox3">
+            <Label id="Label2" class="cql1" text="Quote Price:"/>
+            <Input id="Input1" value="{biddata>Original Bid}"></Input>
+            <Button id="Button" text="Submit"></Button>
         </FlexBox>
     </HBox>
    

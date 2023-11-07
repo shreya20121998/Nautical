@@ -252,3 +252,11 @@
     padding: 10%; margin: 10% 15%;
 }
 
+/*transaction data css*/
+.voy,.right,.FS {
+    margin: 5%;
+}
+/*master data css*/
+.one,.two,.three,.four,.five{
+    margin: 2%; margin-top: 7%;
+}
