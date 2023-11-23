@@ -140,7 +140,22 @@
           "target": [
             "TargetMastView"
           ]
+        },
+        {
+          "name": "RouteTrChangeVoyage",
+          "pattern": "fr",
+          "target": [
+            "TargetTrChangeVoyage"
+          ]
+        },
+        {
+          "name": "TrVoyageOptions",
+          "pattern": "vo",
+          "target": [
+            "TargetTrVoyageOptions"
+          ]
         }
+        
 
       ],
       "targets": {
@@ -199,6 +214,20 @@
           "clearControlAggregation": false,
           "viewId": "MastView",
           "viewName": "MastView"
+        },
+        "TargetTrChangeVoyage": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "TrChangeVoyage",
+          "viewName": "TrChangeVoyage"
+        },
+        "TargetTrVoyageOptions": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "TrVoyageOptions",
+          "viewName": "TrVoyageOptions"
         }
       }
     },

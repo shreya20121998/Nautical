@@ -11,12 +11,16 @@
 
                 <ObjectListItem id="_IDGenObjectListItem1"  intro="Cockpit" ></ObjectListItem>
 
-                <Button id="_IDGenButton2" text="Voyage"  width="30%" class="voy"></Button>
+                <Button id="_IDGenButton2" text="Voyage"  width="30%" class="voy"  press="VoyageOptions"></Button>
                 <Button id="_IDGenButton4" icon="sap-icon://arrow-right" class="right"></Button>
-                <Button id="_IDGenButton3"  text="Freight Simulator" width="30%" class="FS"></Button>
+
+                <Button id="_IDGenButton3"  text="Freight Simulator" width="30%" class="FS" press="onChange"></Button>
                 <Button id="_IDGenButton5"  text="Chartering" width="30%" icon="sap-icon://bar-chart" class="voy"></Button>
+                
                 <Button id="_IDGenButton6" icon="sap-icon://arrow-right" class="right"></Button>
-                <Button id="_IDGenButton7"  text="Request for Quotation" width="30%" class="FS"></Button>
+
+                <Button id="_IDGenButton7"  text="Request for Quotation" width="30%" class="FS" ></Button>
+
                 <Button id="_IDGenButton8"  text="Compare Request for Quotation" width="30%" class="voy"></Button>
                 <Button id="_IDGenButton9" icon="sap-icon://arrow-right" class="right"></Button>
                 <Button id="_IDGenButton10"  text="Invite for Live Freight Negotiation" width="30%" class="FS"></Button>
