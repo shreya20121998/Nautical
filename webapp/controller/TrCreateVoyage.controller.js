@@ -7,20 +7,17 @@ sap.ui.define([
     function (Controller) {
         "use strict";
  
-        return Controller.extend("nauticalfe.controller.TrVoyageOptions", {
+        return Controller.extend("nauticalfe.controller.CreateVoyage", {
             onInit: function () {
                 var voyage = this.getView().byId("VoyageOperations")
                 voyage.addStyleClass("VoyageOperations")
 
                 var heading = this.getView().byId("HeadOptions")
                 heading.addStyleClass("HeadOptions")
-
-                // var alloptions = this.getView().byId("alloptions") //for more dropdown
-                // alloptions.addStyleClass("alloptions")
             },
-            CreateVoyage:function(){
+            voyagePlan:function(){
                 const oRouter = this.getOwnerComponent().getRouter();
-                oRouter.navTo("TrCreateVoyage")    
+                oRouter.navTo("CreateVoyagePlan")  
             }
         });
     });
