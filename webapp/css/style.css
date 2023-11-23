@@ -256,6 +256,22 @@
     padding: 10%; margin: 10% 15%;
 }
 
+.nauticalImg{
+    max-width: 280px !important;
+    height: 270px !important;
+    margin-top: 10%;
+}
+
+.dashPanel2{
+    padding: 1rem;  
+}
+.sapUiSizeCompact .sapMBtnInner {
+    border-radius: 4px;
+}
+.mastrimg{
+    margin-top: 10% !important;
+}
+
 /*transaction data css*/
 .voy,.right,.FS {
     margin: 5%;
@@ -263,4 +279,8 @@
 /*master data css*/
 .one,.two,.three,.four,.five{
     margin: 2%; margin-top: 7%;
+}
+/*for nautical image*/
+.sapMFlexItemAlignAuto {
+    align-self: center;
 }
