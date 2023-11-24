@@ -281,6 +281,29 @@
     margin: 2%; margin-top: 7%;
 }
 /*for nautical image*/
-.sapMFlexItemAlignAuto {
+/* .sapMFlexItemAlignAuto {
     align-self: center;
+} */
+.navContainerControl {
+	border-color: #888 !important;
+	border-style: solid !important;
+	border-width: 0.0625em !important;
+    min-width: 100% !important;
+     width: 200% !important; 
 }
+.sapMNav navContainerControl sapUiSmallMarginBottom
+{
+    min-width: 100%;
+}
+/* test */
+.abc{
+    background-color: aqua;
+    margin: 0px;
+}
+.def{
+    background-color:yellow;
+    margin: 0px;
+    height: 100px;
+    width:1000px;
+}
+
