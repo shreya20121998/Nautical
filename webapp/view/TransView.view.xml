@@ -9,7 +9,7 @@
 
             <Panel id="_IDGenPanel1"  class="panel" width="700px" height="auto">
 
-                <ObjectListItem id="_IDGenObjectListItem1"  intro="Cockpit" ></ObjectListItem>
+                <ObjectListItem id="_IDGenObjectListItem1"  intro=" voyage transaction data" ></ObjectListItem>
 
                 <Button id="_IDGenButton2" text="Voyage"  width="30%" class="voy"  press="VoyageOptions"></Button>
                 <Button id="_IDGenButton4" icon="sap-icon://arrow-right" class="right"></Button>

@@ -161,6 +161,13 @@
           "target": [
             "TargetTrCreateVoyage"
           ]
+        },
+        {
+          "name": "TrCreateVoyagePlan",
+          "pattern": "cvoyPlan",
+          "target": [
+            "TargetTrCreateVoyagePlan"
+          ]
         }
         
 
@@ -242,7 +249,15 @@
           "clearControlAggregation": false,
           "viewId": "TrCreateVoyage",
           "viewName": "TrCreateVoyage"
+        },
+        "TargetTrCreateVoyagePlan": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "TrCreateVoyagePlan",
+          "viewName": "TrCreateVoyagePlan"
         }
+        
       }
     },
     "rootView": {

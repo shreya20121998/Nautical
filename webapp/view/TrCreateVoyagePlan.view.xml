@@ -1,0 +1,194 @@
+<mvc:View xmlns:semantic="sap.m.semantic" xmlns:core="sap.ui.core" xmlns:tnt="sap.tnt" xmlns:cards="sap.f.cards"
+xmlns:form="sap.ui.layout.form"
+ controllerName="nauticalfe.controller.TrCreateVoyagePlan"
+    xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+    <Bar id="navbar">
+      <contentLeft>
+        <Button id="Button1" text="Save" width="100px" class="planNav"/>
+        <Button id="Button2" text="Refresh" width="100px" class="planNav"/>
+        <Button id="Button3" text="Frieght Simulator" width="150px" class="planNav"/>
+        <Button id="Button4" text="Copy" width="100px" class="planNav"/>
+        <Select id="Select1" width="100px" >
+            <items>
+                <core:Item id="_IDGenItem1" text="more"/>
+            </items>
+        </Select>
+      </contentLeft>
+    </Bar>
+    <Text text="Voyage Details" id="detailsheading"/>
+    <HBox >
+    <VBox id="Row1" >
+            <HBox >
+            <Label id="Label1" text="Voyage No.:"/>
+            <Input id="Input1" width="200px"/>
+            </HBox>
+        
+            <HBox >
+            <Label id="Label2" text="Voyage Name:"/>
+            <Input id="Input2" width="200px"/>
+            </HBox>
+       
+    </VBox>
+    <VBox id="Row2">
+            <HBox >
+            <Label id="Label3" text="Voyage Type:"/>
+            <Select id="Select2" width="200px">
+                <items>
+                    <core:Item id="Item2" text="Voyage Type"/>
+                </items>
+            </Select>
+            </HBox>
+        
+            <HBox >
+            <Label id="_Label4" text="Vessel Type:"/>
+            <Select id="_Select3" width="200px">
+                <items>
+                    <core:Item id="_Item3" text="Vessel Type"/>
+                </items>
+            </Select>
+            </HBox>
+      
+    </VBox>
+    <VBox id="Row3">
+            <HBox >
+            <Label id="Label5" text="Currency:  "/>
+            <Input id="Input3" width="100px"/>
+            </HBox>
+       
+            <HBox >
+            <Label id="Label6" text="Historical Frieght Cost Name:"/>
+            <Input id="Input4" width="200px"/>
+            </HBox>
+      
+    </VBox>
+    <VBox id="Row4">
+            <HBox >
+            <Label id="Label7" text="Bid Type:  "/>
+            <Input id="Input5" width="100px"/>
+            </HBox>
+       
+            <HBox >
+            <Label id="Label8" text="Status"/>
+            <Input id="Input6" width="200px"/>
+            </HBox>
+      
+    </VBox>
+    </HBox>
+    <NavContainer id="vesselops">
+                <Bar id="vesselOperations">
+                <contentLeft>
+                    <Button id="Button5" text="Vessel Details" width="150px" press="VesselDetails"/>
+                    <Button id="Button6" text="Vessel Plan/Actual" width="150px" />
+                    <Button id="Button7" text="Bid Details" width="150px" press="TransBidDetails"/>
+                    <Button id="Button8" text="Long Details" width="150px" press="longText" />
+                    <Button id="Button9" text="Document Upload" width="150px"/>
+                </contentLeft>
+                </Bar>
+    </NavContainer>
+
+    <VBox
+		class="sapUiSmallMargin">
+
+		<NavContainer
+			navigationFinished="onNavigationFinished"
+			id="navCon"
+			width="98%"
+			height="16em"
+			class="navContainerControl sapUiSmallMarginBottom">
+			<Page
+				id="p1"
+				title="Page 1" >
+				<footer><OverflowToolbar><Button text="Action 1" /></OverflowToolbar></footer>
+			</Page>
+			<Page
+				id="p2"
+				title="Page 2" >
+				<footer><OverflowToolbar><Button text="Action 2" /></OverflowToolbar></footer>
+			</Page>
+			<Page
+				id="p3"
+				title="Page 3" >
+				<footer><OverflowToolbar><Button text="Action 3" /></OverflowToolbar></footer>
+			</Page>
+			<Page
+				id="p4"
+				title="Page 4" >
+				<footer><OverflowToolbar><Button text="Action 4" /></OverflowToolbar></footer>
+			</Page>
+		</NavContainer>
+
+		<HBox>
+			<Button
+				text="To 1"
+				press="handleNav">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+				<customData>
+					<core:CustomData
+						key="target"
+						value="p1" />
+				</customData>
+			</Button>
+			<Button
+				text="To 2"
+				press="handleNav">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+				<customData>
+					<core:CustomData
+						key="target"
+						value="p2" />
+				</customData>
+			</Button>
+			<Button
+				text="To 3"
+				press="handleNav">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+				<customData>
+					<core:CustomData
+						key="target"
+						value="p3" />
+				</customData>
+			</Button>
+			<Button
+				text="To 4"
+				press="handleNav">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+				<customData>
+					<core:CustomData
+						key="target"
+						value="p4" />
+				</customData>
+			</Button>
+		</HBox>
+
+		<HBox>
+			<Button
+				text="Back"
+				type="Back"
+				press="handleNav">
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</Button>
+			<Select id="animationSelect">
+				<core:Item text="Slide animation" key="slide" />
+				<core:Item text="Base slide animation" key="baseSlide" />
+				<core:Item text="Fade animation" key="fade" />
+				<core:Item text="Flip animation" key="flip" />
+				<core:Item text="Show animation" key="show" />
+				<layoutData>
+					<FlexItemData growFactor="1" />
+				</layoutData>
+			</Select>
+		</HBox>
+
+	</VBox>
+
+</mvc:View>
