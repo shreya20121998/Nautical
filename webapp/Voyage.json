@@ -186,7 +186,29 @@
    
    
    
-]
+],
+"TechnicalBidding":[
+    {
+        "Heads":"LAST CLEANING DATE"
+    },
+    {
+        "Heads":"CLASS OF VESSEL"
+    },
+    {
+        "Heads":"COUNTRY OF ORIGIN"
+    },
+    {
+        "Heads":"LAST PORT OF CALL"
+    }
+] ,
+"CommercialBidding":[
+    {
+        "Heads" : "DEMURRAGE"
+    },
+    {
+        "Heads":"FREIGHT"
+    }
+]  
 
  
            
