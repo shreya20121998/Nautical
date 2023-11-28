@@ -2,6 +2,12 @@
 xmlns:form="sap.ui.layout.form"
  controllerName="nauticalfe.controller.TrCreateVoyagePlan"
     xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+	<ScrollContainer id="_IDGenScrollContainer1"
+		height="100%"
+		width="100%"
+		vertical="true"
+		horizontal="true"
+		focusable="true">
     <Bar id="navbar">
       <contentLeft>
         <Button id="Button1" text="Save" width="100px" class="planNav"/>
@@ -127,19 +133,24 @@ xmlns:form="sap.ui.layout.form"
 						value="p4" />
 				</customData>
 			</Button>
-			
-		</HBox>
-
-		<HBox id="_IDGenHBox11">
-			<Button id="_IDGenButton9"
-				text="Back"
-				type="Back"
+            <Button id="_IDGenButton9"
+				text="Document Upload"
 				press="handleNav">
 				<layoutData>
 					<FlexItemData id="_IDGenFlexItemData5" growFactor="1" />
 				</layoutData>
+				<customData>
+					<core:CustomData
+						key="target"
+						value="p5" />
+				</customData>
 			</Button>
-			<Select id="animationSelect">
+			
+		</HBox>
+
+		<HBox id="_IDGenHBox">
+			
+			<Select id="animationSelect" class="animation">
 				<core:Item id="_IDGenItem2" text="Slide animation" key="slide" />
 				<core:Item id="_IDGenItem3" text="Base slide animation" key="baseSlide" />
 				<core:Item id="_IDGenItem4" text="Fade animation" key="fade" />
@@ -156,34 +167,246 @@ xmlns:form="sap.ui.layout.form"
 			navigationFinished="onNavigationFinished"
 			id="navCon"
 			width="100px"
-			height="16em"
+			height="50em"
 			class="navContainerControl sapUiSmallMarginBottom">
-			<Page
-				id="p1"
-				 >
-				<Text text="hello"></Text>
+
+
+            <!-- for vessel detail page -->
+
+			<HBox id="p1" >
+			<Text text="Enter Details" id="detailsheading1"/>
+            <VBox id="Row">
+                <HBox id="_IDGenHBox11" alignContent="Stretch">
+                    <Label id="_IDGenLabel1" text="Vessel Name:"></Label>
+                    <Input id="_IDGenInput1" width="150px"></Input>
+                </HBox>
+                <HBox id="_IDGenHBox12">
+                    <Label id="_IDGenLabel2" text="Vessel IMO No:"></Label>
+                    <Input id="_IDGenInput2" width="150px"></Input>
+                </HBox>  
+            </VBox>
+            <VBox id="row2">
+            <HBox id="_IDGenHBox13" class="abc">
+                <Label id="_IDGenLabel3" text="Charter Party Agreement:"></Label>
+                <Input id="_IDGenInput3" width="150px"></Input>
+            </HBox>
+            </VBox>
+        
+            <Text id="_IDGenText1" text="Reference Details" class="heading"></Text>
+            <Table width="70%" id="vesselRefDetails">
+                <columns>
+                    <Column id="_IDGenColumn1" width="50px">
+                        <Label id="_IDGenLabel4" text="Sno"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn2" width="200px">
+                        <Label id="_IDGenLabel5" text="Document Indicator"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn3">
+                        <Label id="_IDGenLabel6"  text="Reference Docuement"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn4">
+                        <!-- <Label id="_IDGenLabel7" icon="sap-icon://action-settings"></Label> -->
+                    </Column>                
+                </columns>
+                <items>
+                <ColumnListItem id="_IDGenColumnListItem1">
+                    <cells>
+                        <RadioButton id="_IDGenRadioButton1" selected="{Selected}" select="onRadioSelect"/>
+                        <Select id="_IDGenSelect1" width="200px">
+                        </Select> <!--need to change this to dropwdown-->
+                        <Text id="_IDGenText2" text="{Column2}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+            </Table>
+
 				
-				<footer><OverflowToolbar id="_IDGenOverflowToolbar1"><Button id="_IDGenButton1" text="Action 1" /></OverflowToolbar></footer>
-			</Page>
-			<Page
-				id="p2"
-				title="Page 2" >
-				<footer><OverflowToolbar id="_IDGenOverflowToolbar2"><Button id="_IDGenButton2" text="Action 2" /></OverflowToolbar></footer>
-			</Page>
-			<Page
-				id="p3"
-				title="Page 3" >
-				<footer><OverflowToolbar id="_IDGenOverflowToolbar3"><Button id="_IDGenButton3" text="Action 3" /></OverflowToolbar></footer>
-			</Page>
-			<Page
-				id="p4"
-				title="Page 4" >
-				
-				<footer><OverflowToolbar id="_IDGenOverflowToolbar4"><Button id="_IDGenButton4" text="Action 4" /></OverflowToolbar></footer>
-			</Page>
+	         </HBox>
+
+        <!-- end of vessel detail section -->
+
+
+            <!-- for vessel/plan actual page  -->
+			<HBox id="p2" >
+                 <Text id="_IDGenText3" text="Plan Info Details" class="heading"/>
+            <HBox id="_IDHBox11" class="planOperations">
+            <FlexBox id="_IDGenFlexBox1" alignContent="Stretch">
+            <Button id="_IDGenButton10" icon="../images/minus.png"/>
+            <FlexBox id="_IDGenFlexBox2" alignContent="Stretch" class="infoinputs">
+            <Label id="_IDGenLabel7" text="Actual Speed:" required="true"/>
+            <Input id="_IDGenInput4" width="70px" class="inputfields"></Input>
+            <Label id="_IDGenLabel8" text="NM/Hour"/>
+            </FlexBox>
+            </FlexBox>
+            <FlexBox id="_IDGenFlexBox3" alignContent="Stretch" class="infoinputs">
+                <Label id="_IDGenLabel9" text="Frieght Cost:"/>
+                <Input id="_IDGenInput5" width="70px" class="inputfields"></Input>
+            <FlexBox id="_IDGenFlexBox4" alignContent="Stretch" class="infoinputs">
+                <Label id="_IDGenLabel10" text="Unit:"/>
+                <Select id="_IDGenSelect2" width="150px">
+                </Select>
+            </FlexBox>
+            <FlexBox id="_IDGenFlexBox5" alignContent="Stretch" class="infoinputs">
+                <Label id="_IDGenLabel11" text="Total Cost:"/>
+                <Input id="_IDGenInput6" width="80px" class="inputfields"></Input>
+            </FlexBox>                          
+            <FlexBox id="_IDGenFlexBox6" alignContent="Stretch" class="infoinputs">
+                <Label id="_IDGenLabel12" text="Total Dist:"/>
+                <Input id="_IDGenInput7" width="60px" class="inputfields"></Input>
+            </FlexBox>                          
+            <FlexBox id="_IDGenFlexBox7" alignContent="Stretch" class="infoinputs">
+                <Label id="_IDGenLabel13" text="Total Days:"/>
+                <Input id="_IDGenInput8" width="60px" class="inputfields"></Input>
+            </FlexBox>                          
+            </FlexBox>
+            </HBox>
+            <Table id="_IDGenTable1">
+                <columns>
+                    <Column id="_IDGenColumn5"  width="5px">
+                        <Label id="_IDGenLabel14" text=" "></Label>
+                    </Column>
+                    <Column id="_IDGenColumn6" width="40px">
+                        <Label id="_IDGenLabel15" text="Port name" textAlign="Begin"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn7"  width="40px">
+                        <Label id="_IDGenLabel16" text="Events" textAlign="Begin"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn8" width="40px" >
+                        <Label id="_IDGenLabel17" text="Other Cost" textAlign="Begin"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn9" width="40px" >
+                        <Label id="_IDGenLabel18" text="Frieght Cost" textAlign="Begin"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn10" width="40px" >
+                        <Label id="_IDGenLabel19" text="Total Cost" textAlign="Begin"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn11" width="40px" >
+                        <Label id="_IDGenLabel20" text="Cargo Size" textAlign="Begin"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn12" width="30px">
+                        <Label id="_IDGenLabel21" text="Unit" textAlign="Begin"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn13" width="30px">
+                        <Label id="_IDGenLabel22" text="Distance" textAlign="Begin"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn14" width="30px">
+                        <Label id="_IDGenLabel23" text="UOM" textAlign="Begin"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn15" width="30px">
+                        <Label id="_IDGenLabel24" text="Port Days" textAlign="Begin"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn16" width="30px">
+                        <Label id="_IDGenLabel25" text="Weather" textAlign="Begin"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn17" width="30px" >
+                        <Label id="_IDGenLabel26" text="Sea Days" textAlign="Begin"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn18" width="30px" >
+                        <Label id="_IDGenLabel27" text="ETA" textAlign="Begin"></Label>
+                    </Column>
+                </columns>
+            </Table>
+    <Text id="_IDGenText4" text="Actual Info Details" class="heading"/>
+    <HBox id="_IDHBox12" class="planOperations">
+      <FlexBox id="_IDGenFlexBox8" alignContent="Stretch">
+          <Button id="_IDGenButton11" icon="../images/minus.png"/>
+        <FlexBox id="_IDGenFlexBox9" alignContent="Stretch" class="infoinputs">
+            <Label id="_IDGenLabel28" text="Actual Speed:"/>
+            <Input id="_IDGenInput9" width="70px" class="inputfields"></Input>
+            <Label id="_IDGenLabel29" text="NM/Hour"/>
+        </FlexBox>
+        <FlexBox id="_IDGenFlexBox10" alignContent="Stretch" class="infoinputs">
+            <Label id="_IDGenLabel30" text="Frieght Cost:"/>
+            <Input id="_IDGenInput10" width="70px" class="inputfields"></Input>
+        </FlexBox>
+        <FlexBox id="_IDGenFlexBox11" alignContent="Stretch" class="infoinputs">
+            <Label id="_IDGenLabel31" text="Unit:"/>
+            <Select id="_IDGenSelect3" width="150px">
+            </Select>
+        </FlexBox>
+        <FlexBox id="_IDGenFlexBox12" alignContent="Stretch" class="infoinputs">
+            <Label id="_IDGenLabel32" text="Total Cost:"/>
+            <Input id="_IDGenInput11" width="80px" class="inputfields"></Input>
+        </FlexBox>                          
+        <FlexBox id="_IDGenFlexBox13" alignContent="Stretch" class="infoinputs">
+            <Label id="_IDGenLabel33" text="Total Dist:"/>
+            <Input id="_IDGenInput12" width="60px" class="inputfields"></Input>
+        </FlexBox>                          
+        <FlexBox id="_IDGenFlexBox14" alignContent="Stretch" class="infoinputs">
+            <Label id="_IDGenLabel34" text="Total Days:"/>
+            <Input id="_IDGenInput13" width="60px" class="inputfields"></Input>
+        </FlexBox>                          
+      </FlexBox>
+    </HBox>
+        <Table id="_IDGenTable2">
+        <columns>
+            <Column id="_IDGenColumn19"  width="5px">
+                <Label id="_IDGenLabel35" text=" "></Label>
+            </Column>
+            <Column id="_IDGenColumn20" width="40px">
+                <Label id="_IDGenLabel36" text="Port name" textAlign="Begin"></Label>
+            </Column>
+            <Column id="_IDGenColumn21"  width="40px">
+                <Label id="_IDGenLabel37" text="Events" textAlign="Begin"></Label>
+            </Column>
+            <Column id="_IDGenColumn22" width="40px" >
+                <Label id="_IDGenLabel38" text="Other Cost" textAlign="Begin"></Label>
+            </Column>
+            <Column id="_IDGenColumn23" width="40px" >
+                <Label id="_IDGenLabel39" text="Frieght Cost" textAlign="Begin"></Label>
+            </Column>
+            <Column id="_IDGenColumn24" width="40px" >
+                <Label id="_IDGenLabel40" text="Total Cost" textAlign="Begin"></Label>
+            </Column>
+            <Column id="_IDGenColumn25" width="40px" >
+                <Label id="_IDGenLabel41" text="Cargo Size" textAlign="Begin"></Label>
+            </Column>
+            <Column id="_IDGenColumn26" width="30px">
+                <Label id="_IDGenLabel42" text="Unit" textAlign="Begin"></Label>
+            </Column>
+            <Column id="_IDGenColumn27" width="30px">
+                <Label id="_IDGenLabel43" text="Distance" textAlign="Begin"></Label>
+            </Column>
+            <Column id="_IDGenColumn28" width="30px">
+                <Label id="_IDGenLabel44" text="UOM" textAlign="Begin"></Label>
+            </Column>
+            <Column id="_IDGenColumn29" width="30px">
+                <Label id="_IDGenLabel45" text="Port Days" textAlign="Begin"></Label>
+            </Column>
+            <Column id="_IDGenColumn30" width="30px">
+                <Label id="_IDGenLabel46" text="Weather" textAlign="Begin"></Label>
+            </Column>
+            <Column id="_IDGenColumn31" width="30px" >
+                <Label id="_IDGenLabel47" text="Sea Days" textAlign="Begin"></Label>
+            </Column>
+            <Column id="_IDGenColumn32" width="30px" >
+                <Label id="_IDGenLabel48" text="ETA" textAlign="Begin"></Label>
+            </Column>
+        </columns>
+    </Table>
+
+			</HBox>
+
+            <!-- Bid Details -->
+
+			<HBox id="p3" >
+				<Text id="_IDGenText5" text="page3"></Text>
+			</HBox>
+
+            <!-- long text  -->
+			<HBox id="p4" >
+				<Text id="_IDGenText6" text="page4"></Text>
+				</HBox>
+
+            <!-- for document upload  -->
+            <HBox id="p5" >
+				<Text id="_IDGenText7" text="page5"></Text>
+				</HBox>
+
+        
 		</NavContainer>
 
 		
 	</VBox>
-
+</ScrollContainer>   
 </mvc:View>

@@ -67,7 +67,8 @@
     background-color: red;
     color: white;
 }
-#container-nauticalfe---View2--_IDGenButton3-BDI-content{
+
+#application-nauticalfe-display-component---View2--_IDGenButton3-BDI-content{
     background-color: red;
     color: white;
 }
@@ -291,19 +292,24 @@
     min-width: 100% !important;
      width: 200% !important; 
 }
+
+/*for voyage plan */
 .sapMNav navContainerControl sapUiSmallMarginBottom
 {
     min-width: 100%;
 }
-/* test */
+.animation{
+    display: none;
+}
+.sapUiSizeCompact .sapMBtnContent {
+    line-height: 1.500rem;
+    color: red;
+}
+#application-nauticalfe-display-component---TrCreateVoyagePlan--Select1-labelText{
+    line-height: 1.500rem;
+    color: red;   
+}
 .abc{
-    background-color: aqua;
-    margin: 0px;
+    margin-left: 17%;
+    margin-top: -60px;
 }
-.def{
-    background-color:yellow;
-    margin: 0px;
-    height: 100px;
-    width:1000px;
-}
-
