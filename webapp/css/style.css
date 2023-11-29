@@ -293,6 +293,17 @@
      width: 200% !important; 
 }
 
+/* for voyage option page */
+
+.buttonSpacing{
+    margin-bottom: 2%;
+    height: 5px;
+    margin-left: 25px;
+}
+.buttonhead{
+    margin-top: 8%;
+}
+
 /*for Createvoyage plan */
 .sapMNav navContainerControl sapUiSmallMarginBottom
 {
@@ -313,9 +324,27 @@
     margin-left: 17%;
     margin-top: -60px;
 }
+.headersec{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2%;
+}
+/* for createvoyageplan page */
+.vhead{
+    margin-top: 5%;
+}
+.Hhead{
+    margin-top: 3%;
+}
+
+
+
 /* for Createvoyageplan  vessel plan table  */
+
+
 .inner_tabel{
    max-width: 100vw !important;
+   
 }
 .table_container{
     max-width: 100vw !important;
@@ -346,4 +375,11 @@ font-size: small;
 
 .second_table{
     margin-left: 25% !important;
+}
+
+/* FOR LONG TEXT */
+
+.sapMInputBase.sapMTextArea .sapMTextAreaInner {
+    line-height: 10;
+    background-color: white;
 }
