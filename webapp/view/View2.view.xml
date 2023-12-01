@@ -76,8 +76,8 @@ xmlns:form="sap.ui.layout.form"
         <Input id="_IDGenInput7"  />
         </FlexBox>
         <FlexBox id="_IDGenFlexBox3" >
-        <Button id="_IDGenButton1" class="clr" text="Create Voyage" press="onCreateVoyage"/>
-        <Button id="_IDGenButton2" text="Freight Simulator" />
+        <Button id="_IDGenButton1" class="clr" text="Create Voyage" />
+        <Button id="_IDGenButton2" text="Freight Simulator" press="onCreateVoyage" />
         <Button id="_IDGenButton3" text="Calculate" />
         <Button id="_IDGenButton4"  icon="sap-icon://refresh" />
         </FlexBox>
