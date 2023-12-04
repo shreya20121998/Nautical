@@ -12,13 +12,13 @@ sap.ui.define([
                 var oView = this.getView();
 
       // Button event handlers
-      // oView.byId("_IDGenButton1").attachPress(function () {
-      //   alert("Create Voyage button clicked!");
-      // });
-      
-      oView.byId("_IDGenButton2").attachPress(function () {
-        alert("Freight Simulator button clicked!");
+      oView.byId("_IDGenButton1").attachPress(function () {
+        alert("Create Voyage button clicked!");
       });
+      
+      // oView.byId("_IDGenButton2").attachPress(function () {
+      //   alert("Freight Simulator button clicked!");
+      // });
 
       oView.byId("_IDGenButton3").attachPress(function () {
         alert("Calculate button clicked!");

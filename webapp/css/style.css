@@ -9,32 +9,46 @@
     justify-content: space-between;
     background-color: white;
     border: 1px solid rgb(238, 234, 234);
+    margin-left: 10px;
     
   }
   /* for border*/
   #application-nauticalfe-display-component---View2--mainSplitter-content-1{
-    border: 2px solid grey;
+    background-color: white;
+    border: 1px solid rgb(199, 192, 192);
     height: 400px;
 }
 #application-nauticalfe-display-component---View2--mainSplitter-content-2{
-    border: 2px solid grey;
+    background-color: white;
+    border: 1px solid rgb(199, 192, 192);
     height: 400px;
 }
 #application-nauticalfe-display-component---View2--mainSplitter-content-0{
-    border: 2px solid grey;
+    background-color: white;
+    border: 1px solid rgb(199, 192, 192);
     height: 400px;
 }
-/*for button color*/
+.sapUiLoSplitterH.sapUiLoSplitter {
+    margin: 10px;
+}
+.tableLayout{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 10px !important;
+}
+.speedmeasuretxt{
+    padding: 7px !important;
+}
+.tablebtn{
+    margin-right: 10px !important;
+}
+/*for refresh button color*/
 .sapMBtnInner.sapMBtnText {
     color: red;
     border: 1px solid red;
      
 }
 /*for help button color*/
-/*.sapUiIcon::before{
-    color: rgb(245, 131, 131);
-    
-}*/
 #application-nauticalfe-display-component---View2--_IDGenButton4-img{
     color: red; /*for refresh button*/
 }
@@ -52,20 +66,15 @@
 #application-nauticalfe-display-component---View2--_IDGenInput5-vhi{
     color: rgb(245, 131, 131);
 }
-/*------------*/
-
-
-
 .sapUiSizeCompact .sapMBtnInner{
-    color: red;
     border: 1px solid red;
 }
+/* Calculate Btn */
 #application-nauticalfe-display-component---View2--_IDGenButton4-inner{
     color: red;
 }
 #application-nauticalfe-display-component---View2--_IDGenButton3-inner{
     background-color: red;
-    color: white;
 }
 
 #application-nauticalfe-display-component---View2--_IDGenButton3-BDI-content{
@@ -81,20 +90,13 @@
     color: red;
     background-color: rgba(234, 144, 130, 0.299);
 }
-#__data15{
-    padding: 7px;
-}
-#__data17{
-    padding: 7px;
-}
-#__data18{
-    padding: 7px;
-}
-.sapMListTblCell{
-    border: 1px solid rgb(246, 243, 243);
-}
 
-/*for view 3 headers*/
+.sapMColumnHeader .sapMText {
+    font-size: 12px;
+}
+/*---------------------------------------------------------------------------------------------------------*/
+
+/*For view 3 headers*/
 
 #application-nauticalfe-display-component---View3--header2{
     background-color:white
@@ -111,14 +113,7 @@
     background-color:rgb(25, 134, 134);
     height: 45px;
 }
-#container-nauticalfe---View3--header3{
-    background-color: rgb(18, 116, 116) !important;
-    height:45px;
-}
-#container-nauticalfe---View3--header4{
-    background-color: rgb(18, 116, 116) !important;
-    height: 40px;
-}
+
 #application-nauticalfe-display-component---View3--link2{
     color:black;
     margin-left: 45%;

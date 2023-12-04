@@ -20,10 +20,10 @@ xmlns:form="sap.ui.layout.form"
         width="100%">
         
        
-        <VBox id="_IDGenVBox1">
+        <VBox id="_IDGenVBox1" class="spilterlayout">
         
             <layoutData>
-                <l:SplitterLayoutData id="_IDGenSplitterLayoutData1" size="300px" resizable="false" />
+                <l:SplitterLayoutData id="_IDGenSplitterLayoutData1" size="250px" resizable="false" />
             </layoutData>
             <!-- Add a Form inside _IDGenSplitterLayoutData1 -->
             <form:SimpleForm id="_IDGenSimpleForm1" title="Create Voyage">
@@ -44,14 +44,14 @@ xmlns:form="sap.ui.layout.form"
             </form:SimpleForm>
             
         </VBox>
-        <VBox id="_IDGenVBox2" >
+        <VBox id="_IDGenVBox2" class="spilterlayout">
             <layoutData>
                 <l:SplitterLayoutData id="_IDGenSplitterLayoutData2" size="auto" />
             </layoutData>
             
         </VBox>
 
-        <VBox id="_IDGenVBox3"  >
+        <VBox id="_IDGenVBox3" class="spilterlayout" >
             <layoutData>
                 <l:SplitterLayoutData id="_IDGenSplitterLayoutData3" size="30%" minSize="300px" resizable="false" />
             </layoutData>
@@ -67,24 +67,23 @@ xmlns:form="sap.ui.layout.form"
         </FlexBox>
         
         <FlexBox id="_IDGenFlexBox2">
-        <Label id="_IDGenLabel6" text="Speed" />
-        <Input id="_IDGenInput6"  />
-        <Label id="_IDGenLabel8" text="NM/HRS" />
+          <Label id="_IDGenLabel6" class="speedmeasuretxt" text="Speed" />
+          <Input id="_IDGenInput6"  />
+          <Label id="_IDGenLabel8" class="speedmeasuretxt" text="NM/HRS" />
+          <Label id="_IDGenLabel7" class="speedmeasuretxt" text="Total Days" />
+          <Input id="_IDGenInput7"  />
         </FlexBox>
-        <FlexBox id="_IDGenFlexBox4" >
-        <Label id="_IDGenLabel7" text="Total Days" />
-        <Input id="_IDGenInput7"  />
-        </FlexBox>
+      
         <FlexBox id="_IDGenFlexBox3" >
-        <Button id="_IDGenButton1" class="clr" text="Create Voyage" />
-        <Button id="_IDGenButton2" text="Freight Simulator" press="onCreateVoyage" />
-        <Button id="_IDGenButton3" text="Calculate" />
-        <Button id="_IDGenButton4"  icon="sap-icon://refresh" />
+          <Button id="_IDGenButton1" class="clr tablebtn" text="Create Voyage" />
+          <Button id="_IDGenButton2" class="tablebtn" text="Freight Simulator" press="onCreateVoyage" />
+          <Button id="_IDGenButton3" class="tablebtn" text="Calculate" />
+          <Button id="_IDGenButton4" class="tablebtn" icon="sap-icon://refresh" />
         </FlexBox>
         
         
       </HBox>
-        <Table id="table"  items="{Vdata>/voyageData}" growing="true" growingThreshold="10"  >
+        <Table id="table" class="tableLayout" items="{Vdata>/voyageData}" growing="true" growingThreshold="10"  >
           <columns>
            <Column id="heading1" >
              <Text id="text1" text="Port Name"/>
@@ -125,7 +124,7 @@ xmlns:form="sap.ui.layout.form"
           </columns>
 
          <items>
-           <ColumnListItem id="coloumnlist" type="Navigation" press="onNext" >
+           <ColumnListItem id="coloumnlist"  >
              <cells>
               <Input id="field1" value ="{Vdata>Port Name}"/>
               <Input id="field8" value ="{Vdata>Distance}"/>
