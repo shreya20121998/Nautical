@@ -31,7 +31,13 @@ sap.ui.define([
     onCreateVoyage: function() {
       const oRouter = this.getOwnerComponent().getRouter();
       oRouter.navTo("RouteView3");
+
   },
+  onChangeVoyage: function() {
+    const oRouter = this.getOwnerComponent().getRouter();
+    oRouter.navTo("RouteTrChangeVoyage");
+    
+}
     
   });
 });

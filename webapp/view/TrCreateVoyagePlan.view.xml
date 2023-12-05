@@ -2,27 +2,29 @@
 xmlns:form="sap.ui.layout.form"
  controllerName="nauticalfe.controller.TrCreateVoyagePlan"
     xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
-	<ScrollContainer id="_IDGenScrollContainer1"
-		height="100%"
-		width="100%"
-		vertical="true"
-		horizontal="false"
-		focusable="true">
+<ScrollContainer id="_IDGenScrollContainer1"
+    height="100%"
+    width="100%"
+    vertical="true"
+    horizontal="false"
+    focusable="true">
+
     <Bar id="navbar">
-      <contentLeft>
-        <Button id="Button1" text="Save" width="100px" class="planNav"/>
-        <Button id="Button2" text="Refresh" width="100px" class="planNav"/>
-        <Button id="Button3" text="Frieght Simulator" width="150px" class="planNav"/>
-        <Button id="Button4" text="Copy" width="100px" class="planNav"/>
-        <Select id="Select1" width="100px" >
-            <items>
-                <core:Item id="_IDGenItem1" text="more"/>
-            </items>
-        </Select>
-      </contentLeft>
+        <contentLeft>
+            <Button id="Button1" text="Save" width="100px" class="planNav"/>
+            <Button id="Button2" text="Refresh" width="100px" class="planNav"/>
+            <Button id="Button3" text="Frieght Simulator" width="150px" class="planNav"/>
+            <Button id="Button4" text="Copy" width="100px" class="planNav"/>
+            <Select id="Select1" width="100px" >
+                <items>
+                    <core:Item id="_IDGenItem1" text="more"/>
+                </items>
+            </Select>
+        </contentLeft>
     </Bar>
-    <Text id="_IDGenText11" text="Voyage Details" class="detailsheading"/>
-    <HBox id="_IDGenHBox1" >
+
+    <Text id="_IDGenText11" text="Voyage Details" class="vgheading"/>
+    <HBox id="_IDGenHBox1" class="vdHeadingLayout">
     <VBox id="_IDGenVBox1" class="Row1" alignItems="End">
             <HBox id="_IDGenHBox2" alignItems="End">
             <Label id="Label1" text="Voyage No:"/>
@@ -35,45 +37,45 @@ xmlns:form="sap.ui.layout.form"
             </HBox>
        
     </VBox>
-    <VBox id="_IDGenVBox2" class="Row2" alignItems="End">
-            <HBox id="_IDGenHBox4" >
+    <VBox id="_IDGenVBox2" class="Row2" >
+            <HBox id="_IDGenHBox4" alignItems="End">
             <Label id="Label3" text="Voyage Type:"/>
             <Select id="Select2" width="200px">
                 <items>
-                    <core:Item id="Item2" text="Voyage Type"/>
+                    <core:Item id="Item2" text="TEST"/>
                 </items>
             </Select>
             </HBox>
         
-            <HBox id="_IDGenHBox5" >
+            <HBox id="_IDGenHBox5"  alignItems="End">
             <Label id="_Label4" text="Vessel Type:"/>
             <Select id="_Select3" width="200px">
                 <items>
-                    <core:Item id="_Item3" text="Vessel Type"/>
+                    <core:Item id="_Item3" text="TEST"/>
                 </items>
             </Select>
             </HBox>
       
     </VBox>
     <VBox id="_IDGenVBox3" class="Row3" alignItems="End">
-            <HBox id="_IDGenHBox6" >
+            <HBox id="_IDGenHBox6"  alignItems="End" >
             <Label id="Label5" text="Currency:  "/>
             <Input id="Input3" width="100px"/>
             </HBox>
        
-            <HBox id="_IDGenHBox7" >
-            <Label id="Label6" text="Historical Frieght Cost Name:"/>
+            <HBox id="_IDGenHBox7" alignItems="End" >
+            <Label id="Label6" text="Historical Frieght Cost:"/>
             <Input id="Input4" width="100px"/>
             </HBox>
       
     </VBox>
-    <VBox id="_IDGenVBox4" class="Row4" alignItems="Stretch">
-            <HBox id="_IDGenHBox8" >
+    <VBox id="_IDGenVBox4" class="Row4">
+            <HBox id="_IDGenHBox8"  alignItems="End" >
             <Label id="Label7" text="Bid Type:  "/>
             <Input id="Input5" width="100px"/>
             </HBox>
        
-            <HBox id="_IDGenHBox9" >
+            <HBox id="_IDGenHBox9"  alignItems="End" >
             <Label id="Label8" text="Status"/>
             <Input id="Input6" width="200px"/>
             </HBox>
@@ -82,8 +84,8 @@ xmlns:form="sap.ui.layout.form"
     </HBox>
   <!-- for nav container buttons   83 - 155 -->
     <VBox id="VBox1" class="sapUiSmallMargin">
-		  <HBox id="HBox10">
-
+		  <Bar id="HBox10">
+            <contentLeft>
 		   <!-- vessel detail button -->
 			<Button id="Button5" text="Vessel Details" press="handleNav" icon="sap-icon://inspection">
 				<layoutData>
@@ -152,8 +154,8 @@ xmlns:form="sap.ui.layout.form"
 						value="p5" />
 				</customData>
 			</Button>
-			
-		</HBox>
+		</contentLeft>
+		</Bar>
      
      <!-- for animation  -->
 		<HBox id="_IDGenHBox">
@@ -194,7 +196,7 @@ xmlns:form="sap.ui.layout.form"
                 </HBox>  
             </VBox>
             <VBox id="_IDGenVBox6" class="row2">
-            <HBox id="_IDGenHBox13" class="abc">
+            <HBox id="_IDGenHBox13" class="vdetailsHeading">
                 <Label id="_IDGenLabel3" text="Charter Party Agreement:"></Label>
                 <Input id="_IDGenInput3" width="150px"></Input>
             </HBox>
@@ -245,7 +247,7 @@ xmlns:form="sap.ui.layout.form"
 
      <!-- for vessel/plan actual page  -->
 			<HBox id="p2" class="table_container">
-                 <Text id="_IDGenText3" text="Plan Info Details" class="heading"/>
+                 <Text id="_IDGenText3" text="Plan Info Details" class="planInfoHeading"/>
             <HBox id="_IDHBox11" class="planOperations">
             <FlexBox id="_IDGenFlexBox1" alignContent="Stretch" >
             <Button id="_IDGenButton10" icon="sap-icon://sys-minus"/>

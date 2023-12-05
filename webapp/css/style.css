@@ -299,31 +299,55 @@
     margin-top: 8%;
 }
 
+
+
+
+
+
 /*for Createvoyage plan */
-.sapMNav navContainerControl sapUiSmallMarginBottom
-{
-    min-width: 100%;
-}
+
 .animation{
     display: none;
 }
+
 .sapUiSizeCompact .sapMBtnContent {
     line-height: 1.500rem;
-    color: red;
+    color: rgb(194, 65, 65);
 }
 #application-nauticalfe-display-component---TrCreateVoyagePlan--Select1-labelText{
     line-height: 1.500rem;
-    color: red;   
+    color: rgb(172, 52, 52);  
 }
-.abc{
+.vdetailsHeading{
     margin-left: 17%;
     margin-top: -60px;
 }
-.headersec{
+/* .headersec{
     display: flex;
     justify-content: space-between;
     padding-left: 2%;
+} */
+
+.vgheading{
+    margin: 10px;
+    padding: 5px;
+    border-bottom: 1px solid rgb(180, 179, 179);
+    width: 100%;
 }
+.vdHeadingLayout{
+    justify-content: space-between;
+    margin-left: 3.5rem;
+}
+.sapMLabel {
+    padding: 5px;
+}
+.planInfoHeading{
+    border-bottom: 1px solid rgb(202, 199, 199);
+    width: 100%;
+}
+
+
+
 /* for createvoyageplan page */
 .vhead{
     margin-top: 5%;
@@ -406,3 +430,40 @@ font-size: small;
     font-size: 15px;
     font-weight: bold;
 }
+
+
+
+
+/* voyage change screen */
+
+.vdHeaderLayout{
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+    justify-content: space-between;
+}
+/* .navContainer2{
+    margin-left: 3rem;
+    width: 100%;
+} */
+.navigationPanel{
+    margin-left: 3rem;
+}
+.vdheading{
+    border-bottom: 1px solid rgb(204, 201, 201);
+    width: 100%;
+    padding: 0.5rem;
+}
+.vdsection{
+   margin-left: 8rem;
+}
+.vdsection2{
+    margin-left: 7.4rem;
+}
+.rdheading{
+    margin-top: 2rem;
+}
+.vesselRefDetails{
+    border: 1px solid grey;
+}
+/* vessel Plan section  */
+
