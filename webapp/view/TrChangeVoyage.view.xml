@@ -2,6 +2,8 @@
     xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns:semantic="sap.m.semantic" xmlns:core="sap.ui.core" xmlns:main="sap.ui.webc.main" xmlns:tnt="sap.tnt" xmlns:cards="sap.f.cards"
     xmlns:form="sap.ui.layout.form"
+    	xmlns:l="sap.ui.layout"
+	    xmlns:u="sap.ui.unified"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
       <Bar id="navbar">
@@ -19,7 +21,11 @@
           </Select>
         </contentLeft>
       </Bar>
- 
+      <ScrollContainer id="_IDGenScrollContainer1"
+        height="100%"
+        width="100%"
+        vertical="true"
+        focusable="true">
       <Text id="_IDGenText11" class="vgheading" text="Voyage Details" />
       <!-- For Header Section -->
       <HBox id="_IDGenHBox1" class="vdHeaderLayout" >
@@ -159,11 +165,12 @@
     <NavContainer
         navigationFinished="onNavigationFinished"
         id="navCon"
-        width="100px"
+        width="100%"
         height="50em"
         class="navContainerControl sapUiSmallMarginBottom">
         <!-- for vessel detail page -->
         <Panel id="p1" height="600px" class="navigationPanel">
+        
           <Text id="_IDGenText12" text="Enter Details" class="vdheading"/>
           <FlexBox id="vdsection1" class="vdsection" alignContent="Center">
             <Label id="_IDGenLabel1" text="Vessel Name:"></Label>
@@ -178,115 +185,88 @@
 
           <Text id="_IDGenText1" text="Reference Details" class="vdheading rdheading"></Text>
 
-          <!-- <Table id="_IDGenTable3" width="30%">
-            <columns>
-              <Column id="_IDGenColumn1" width="40px">
-                  <Label id="_IDGenLabel4" text=" "></Label>
-              </Column>
-              <Column id="_IDGenColumn2" width="200px">
-                  <Label id="_IDGenLabel5" text="Document Indicator"></Label>
-              </Column>
-              <Column id="_IDGenColumn3" width="200px">
-                  <Label id="_IDGenLabel6"  text="Reference Docuement No"></Label>
-              </Column>
-              <Column id="_IDGenColumn31" width="310px">
-                  <Label id="_IDGenLabel41" text=" "></Label>
-              </Column>
-              <Column id="_IDGenColumn4" >
-                  <Label id="_IDGenLabel42" icon="sap-icon://action-settings"></Label>
-              </Column>                
-            </columns>
-            <items >
-              <ColumnListItem id="_IDGenColumnListItem1" class="vesselRefDetails">
-                  <cells >
-                    <RadioButton id="_IDGenRadioButton1" ></RadioButton>
-                    <Select id="_IDGenSelect5" width="200px">
-                        <items>
-                            <core:Item id="_IDGenItem8"  text=""></core:Item>
-                            <core:Item id="_IDGenItem9"  text="G - SALES CONTRACT"></core:Item>
-                            <core:Item id="_IDGenItem10"  text="K - PURCHASE CONTRACT"></core:Item>
-                            <core:Item id="_IDGenItem11"  text="P - PURCHASE ORDER"></core:Item>
-                            <core:Item id="_IDGenItem12"  text="S - SALES ORDER"></core:Item>
-                            <core:Item id="_IDGenItem13"  text="Z - NOMINATION KEY"></core:Item>
-                        </items>
-                    </Select>
-                  </cells>  
-              </ColumnListItem>
+          <Table id="_IDGenTable3" width="30%" class="vesselRefDetails">
+                <columns>
+                    <Column id="_IDGenColumn1" width="40px">
+                        <Label id="_IDGenLabel4" text=" "></Label>
+                    </Column>
+                    <Column id="_IDGenColumn2" width="200px">
+                        <Label id="_IDGenLabel5" text="Document Indicator"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn3" width="150px">
+                        <Label id="_IDGenLabel6"  text="Reference Docuement No"></Label>
+                    </Column>
+                    <Column id="_IDGenColumn31" width="310px">
+                        <Label id="_IDGenLabel41" text=" "></Label>
+                    </Column>
+                                
+                </columns>
+                <items>
+                <ColumnListItem id="_IDGenColumnListItem1" class="referenceTable" >
+                    <cells>
+                        <RadioButton id="_IDGenRadioButton1" ></RadioButton>
+                        <Select id="_IDGenSelect5" width="200px">
+                            <items>
+                                <core:Item id="_IDGenItem8"  text=""></core:Item>
+                                <core:Item id="_IDGenItem9"  text="G - SALES CONTRACT"></core:Item>
+                                <core:Item id="_IDGenItem10"  text="K - PURCHASE CONTRACT"></core:Item>
+                                <core:Item id="_IDGenItem11"  text="P - PURCHASE ORDER"></core:Item>
+                                <core:Item id="_IDGenItem12"  text="S - SALES ORDER"></core:Item>
+                                <core:Item id="_IDGenItem13"  text="Z - NOMINATION KEY"></core:Item>
+                            </items>
+                        </Select>
+                    </cells>
+                  
+                </ColumnListItem>
+                <ColumnListItem id="ColumnListItem6" class="referenceTable">
+                    <cells>
+                        <RadioButton id="_IDGenRadioButton2" ></RadioButton>
+                    </cells>
+                </ColumnListItem>
+                <ColumnListItem id="ColumnListItem7" class="referenceTable">
+                    <cells>
+                        <RadioButton id="_IDGenRadioButton3" ></RadioButton>
+                    </cells>
+                </ColumnListItem>
+                <ColumnListItem id="ColumnListItem8" >
+                    <cells>
+                        <RadioButton id="_IDGenRadioButton4" ></RadioButton>
+                    </cells>
+                </ColumnListItem>
+                <ColumnListItem id="ColumnListItem9" >
+                    <cells>
+                        <RadioButton id="_IDGenRadioButton5" ></RadioButton>
+                    </cells>
+                </ColumnListItem>
+              
             </items>
-          </Table> -->
+          </Table>
 
-            <main:Table
-              id="idProductsTable"
-              rowClick="handleRowClick"
-              mode="SingleSelect"
-              selectionChange="handleSelectionChange"
-              >
-              <main:columns>
-                <main:TableColumn id="_IDGenTableColumn1">
-                  <main:Label id="_IDGenLabel41" text="Product" />
-                </main:TableColumn>
-                <main:TableColumn id="_IDGenTableColumn2">
-                  <main:Label id="_IDGenLabel42" text="Supplier" />
-                </main:TableColumn>
-                <main:TableColumn id="_IDGenTableColumn3">
-                  <main:Label id="_IDGenLabel43" text="" />
-                </main:TableColumn>
-              </main:columns>
-            <main:rows>
-              <main:TableRow id="_IDGenTableRow1" type="Active">
-                <main:cells>
-                  <main:TableCell id="_IDGenTableCell1">
-                    <main:content>
-                      <main:Label id="_IDGenLabel46" text="Name"/>
-                    </main:content>
-                  </main:TableCell>
-                  <main:TableCell id="_IDGenTableCell2">
-                    <main:content>
-                      <main:Label id="_IDGenLabel49" text="SupplierName" />
-                    </main:content>
-                  </main:TableCell>
-                </main:cells>
-            </main:TableRow>
-          </main:rows>
-          <main:rows>
-            <main:TableRow id="_IDGenTableRow51" type="Active">
-              <main:cells>
-                <main:TableCell id="_IDGenTableCell52">
-                  <main:content>
-                    <main:Label id="_IDGenLabel53" text=""/>
-                  </main:content>
-                </main:TableCell>
-                <main:TableCell id="_IDGenTableCel54">
-                  <main:content>
-                    <main:Label id="_IDGenLabel55" text="" />
-                  </main:content>
-                </main:TableCell>
-              </main:cells>
-            </main:TableRow>
-          </main:rows>
-        </main:Table>
         </Panel>
         <!-- end of vessel detail section -->
 
-        <HBox id="p2" class="table_container">
+        <Panel id="p2" class="vsplandetails">
             <Text id="_IDGenText3" text="Plan Info Details" class="vdheading"/>
-            <Panel id="_IDHBox11" class="vsplandetails">
-              <FlexBox id="_IDGenFlexBox1" alignContent="Stretch" >
+            <HBox id="_IDHBox11">
+              <FlexBox id="_IDGenFlexBox1" alignContent="Stretch" class="vsplaninputs" >
                 <Button id="_IDGenButton10" icon="sap-icon://sys-minus"/>
                 <FlexBox id="_IDGenFlexBox2" alignContent="Stretch" class="infoinputs">
-                  <Label id="_IDGenLabel7" text="Actual Speed:" required="true"/>
+                  <Label id="_IDGenLabel7" text="Plan Speed:" required="true"/>
                   <Input id="_IDGenInput4" width="70px" class="inputfields"></Input>
                   <Label id="_IDGenLabel8" text="NM/Hour"/>
                 </FlexBox>
-                </FlexBox>
+                
                 <FlexBox id="_IDGenFlexBox3" alignContent="Stretch" class="infoinputs">
                     <Label id="_IDGenLabel9" text="Frieght Cost:"/>
                     <Input id="_IDGenInput5" width="70px" class="inputfields"></Input>
+                </FlexBox>
+
                 <FlexBox id="_IDGenFlexBox4" alignContent="Stretch" class="infoinputs">
                     <Label id="_IDGenLabel10" text="Unit:"/>
                     <Select id="_IDGenSelect2" width="150px">
                     </Select>
                 </FlexBox>
+                
                 <FlexBox id="_IDGenFlexBox5" alignContent="Stretch" class="infoinputs">
                     <Label id="_IDGenLabel11" text="Total Cost:"/>
                     <Input id="_IDGenInput6" width="80px" class="inputfields"></Input>
@@ -300,57 +280,85 @@
                     <Input id="_IDGenInput8" width="50px" class="inputfields"></Input>
                 </FlexBox>                          
               </FlexBox>
-            </Panel>
+            </HBox>
 
-            <Table id="_IDGenTable1" class="inner_tabel">
-              <columns>
-                  <Column id="_IDGenColumn5"  width="7px">
+            <Table id="_IDGenTable1">
+              <columns >
+                  <Column id="_IDGenColumn5"  width="10px">
                       <Label id="_IDGenLabel14" text=" "></Label>
                   </Column>
-                  <Column id="_IDGenColumn6" width="40px">
-                      <Label id="_IDGenLabel15" text="Port name" textAlign="Begin"></Label>
+                   <Column id="_IDGenColumn4">
+                      <Label id="pname" text="LegID" textAlign="Begin"></Label>
                   </Column>
-                  <Column id="_IDGenColumn7"  width="40px">
+                   <Column id="_IDGenColumn01">
+                      <Label id="panme" text="Port C.." textAlign="Begin"></Label>
+                  </Column>
+                  <Column id="_IDGenColumn7">
                       <Label id="_IDGenLabel16" text="Events" textAlign="Begin"></Label>
                   </Column>
-                  <Column id="_IDGenColumn8" width="40px" >
+                  <Column id="_IDGenColumn6">
+                      <Label id="_IDGenLabel15" text="Port name" textAlign="Begin"></Label>
+                  </Column>
+                  <Column id="_IDGenColumn8" >
                       <Label id="_IDGenLabel17" text="Other Cost" textAlign="Begin"></Label>
                   </Column>
-                  <Column id="_IDGenColumn9" width="40px" >
+                  <Column id="_IDGenColumn9">
                       <Label id="_IDGenLabel18" text="Frieght Cost" textAlign="Begin"></Label>
                   </Column>
-                  <Column id="_IDGenColumn10" width="40px" >
+                  <Column id="_IDGenColumn10">
                       <Label id="_IDGenLabel19" text="Total Cost" textAlign="Begin"></Label>
                   </Column>
-                  <Column id="_IDGenColumn11" width="40px" >
+                  <Column id="_IDGenColumn11">
                       <Label id="_IDGenLabel20" text="Cargo Size" textAlign="Begin"></Label>
                   </Column>
-                  <Column id="_IDGenColumn12" width="30px">
+                  <Column id="_IDGenColumn12">
                       <Label id="_IDGenLabel21" text="Unit" textAlign="Begin"></Label>
                   </Column>
-                  <Column id="_IDGenColumn13" width="30px">
+                  <Column id="_IDGenColumn13">
                       <Label id="_IDGenLabel22" text="Distance" textAlign="Begin"></Label>
                   </Column>
-                  <Column id="_IDGenColumn14" width="30px">
+                  <Column id="_IDGenColumn14">
                       <Label id="_IDGenLabel23" text="UOM" textAlign="Begin"></Label>
                   </Column>
-                  <Column id="_IDGenColumn15" width="30px">
+                  <Column id="_IDGenColumn15">
                       <Label id="_IDGenLabel24" text="Port Days" textAlign="Begin"></Label>
                   </Column>
-                  <Column id="_IDGenColumn16" width="30px">
+                  <Column id="_IDGenColumn16">
                       <Label id="_IDGenLabel25" text="Weather" textAlign="Begin"></Label>
                   </Column>
-                  <Column id="_IDGenColumn17" width="30px" >
+                  <Column id="_IDGenColumn17">
                       <Label id="_IDGenLabel26" text="Sea Days" textAlign="Begin"></Label>
                   </Column>
-                  <Column id="_IDGenColumn18" width="30px" >
+                  <Column id="_IDGenColumn18">
                       <Label id="_IDGenLabel27" text="ETA" textAlign="Begin"></Label>
+                  </Column>
+                  <Column id="_IDGenColumn019">
+                      <Label id="_IDGenLabel028" text="Time" textAlign="Begin"></Label>
+                  </Column>
+                  <Column id="_IDGenColumn020">
+                      <Label id="_IDGenLabel029" text="ETD" textAlign="Begin"></Label>
+                  </Column>
+                  <Column id="_IDGenColumn021">
+                      <Label id="_IDGenLabel030" text="Time" textAlign="Begin"></Label>
+                  </Column>
+                  <Column id="_IDGenColumn022">
+                      <Label id="_IDGenLabel031" text="Status" textAlign="Begin"></Label>
                   </Column>
               </columns>
               <items>
-                <ColumnListItem id="_IDGenColumnListItem4">
+                <ColumnListItem id="_IDGenColumnListItem4"  class="inner_tabel">
                     <cells>
                         <CheckBox id="_IDGenCheckBox1"></CheckBox>
+                    </cells>
+                </ColumnListItem>
+                <ColumnListItem id="_IDGenCollistItem4"  class="inner_tabel">
+                    <cells>
+                        <CheckBox id="_IDGenChkBox1"></CheckBox>
+                    </cells>
+                </ColumnListItem>
+                <ColumnListItem id="_IDGenCoListItem4"  class="inner_tabel">
+                    <cells>
+                        <CheckBox id="_IDGenCheBox1"></CheckBox>
                     </cells>
                 </ColumnListItem>
               </items>
@@ -442,8 +450,79 @@
               </ColumnListItem>
             </items>
           </Table>
-        </HBox>
+      </Panel>
+
+
+
+      <Panel id="p5" class="" height="400px">
+      
+				<Text id="_IDGenText13" text="Document Upload" class="vdheading"/>
+                 <!-- <Table id="docTableId" width="100%">
+                    <columns>
+                        <Column id="_IDGenColumn32" width="2px">
+                            <Label id="_IDGenLabel44" text=" "></Label>
+                        </Column>  
+                        <Column id="_IDGenColumn33" width="100px">
+                            <Label id="_IDGenLabel45" text="File Name" textAlign="Begin"></Label>
+                        </Column>
+                        <Column id="_IDGenColumn34" width="100px">
+                            <Label id="_IDGenLabel46" text=""></Label>
+                        </Column>                
+                    </columns>
+                      <ColumnListItem id="_IDGenColumnListItem6" press="handleUploadPress" >
+                          <cells>
+                          <RadioButton id="_IDGenRadioButon2"></RadioButton>
+                          </cells>
+                      </ColumnListItem>
+                      <ColumnListItem id="_IDGenColumnListItem7">
+                          <cells>
+                          <RadioButton id="_IDGenRadioButon3"></RadioButton>
+                          </cells>
+                      </ColumnListItem>
+                      <ColumnListItem id="_IDGenColumnListItem8">
+                          <cells>
+                          <RadioButton id="_IDGenRadioButon4"></RadioButton>
+                          </cells>
+                      </ColumnListItem>
+                      <ColumnListItem id="_IDGenColumnListItem9">
+                          <cells>
+                          <RadioButton id="_IDGenRadioButon5"></RadioButton>
+                          </cells>
+                      </ColumnListItem>
+                      <ColumnListItem id="_IDGenColumnListItem10">
+                          <cells>
+                          <RadioButton id="_IDGenRadioButon6"></RadioButton>
+                          </cells>
+                      </ColumnListItem>
+                </Table> -->
+
+
+                <l:VerticalLayout id="_IDGenVerticalLayout1">
+                  <u:FileUploader
+                  
+                    id="fileUploader"
+                    name="myFileUpload"
+                    uploadUrl="upload/"
+                    tooltip="Upload your file to the local server"
+                    uploadComplete="handleUploadComplete"
+                    buttonText="Choose File"
+                    icon="sap-icon://value-help"
+                    
+                    
+                    />
+                  <!-- <Button id="_IDGenButton11"
+                    text="Upload File"
+                    press="handleUploadPress"/> -->
+                    
+	              </l:VerticalLayout>
+
+      </Panel>
+
+
+
+
     </NavContainer>
+    </ScrollContainer>
 </mvc:View>
  
 

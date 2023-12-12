@@ -2,7 +2,7 @@
     xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns:core="sap.ui.core"
     xmlns="sap.m" xmlns:tnt="sap.tnt">
-    	<Page id="_IDGenPage1">
+    	<Page id="_IDGenPage1" title="Voyage Master Data">
         
         
 
@@ -32,7 +32,7 @@
                 <Button id="_IDGenButton17" icon="sap-icon://arrow-right" class="two"></Button>      
                 <Button id="_IDGenButton19"  text="Ref. Doc. Indicator" width="22%" class="three"></Button>
                 <Button id="_IDGenButton20" icon="sap-icon://arrow-right" class="four"></Button>
-                <Button id="_IDGenButton22" text="Business Partner" width="22%" class="five"></Button>
+                <Button id="_IDGenButton22" text="Business Partner" width="22%" class="five" press="onBusinessPress"></Button>
                 <Button id="_IDGenButton23"  text="Configure Release..." width="22%" class="one"></Button>
                 <Button id="_IDGenButton21"  icon="sap-icon://arrow-right" class="two"></Button> 
                 <Button id="_IDGenButton24"  text="Port/Loc Upload" width="22%" class="three"></Button>

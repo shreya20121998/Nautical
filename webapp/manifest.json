@@ -168,6 +168,20 @@
           "target": [
             "TargetTrCreateVoyagePlan"
           ]
+        },
+        {
+          "name": "RouteBusinessPartner",
+          "pattern": "BusinessPartner",
+          "target": [
+            "TargetBusinessPartner"
+          ]
+        },
+        {
+          "name": "RouteBPMasterDetails",
+          "pattern": "BPMasterDetailsr",
+          "target": [
+            "TargetBPMasterDetails"
+          ]
         }
         
 
@@ -256,6 +270,20 @@
           "clearControlAggregation": false,
           "viewId": "TrCreateVoyagePlan",
           "viewName": "TrCreateVoyagePlan"
+        },
+        "TargetBusinessPartner": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "BusinessPartner",
+          "viewName": "BusinessPartner"
+        },
+        "TargetBPMasterDetails": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "BPMasterDetails",
+          "viewName": "BPMasterDetails"
         }
         
       }

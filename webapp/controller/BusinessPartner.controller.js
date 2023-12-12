@@ -5,13 +5,14 @@ sap.ui.define(
     function(BaseController) {
       "use strict";
   
-      return BaseController.extend("nauticalfe.controller.MastView", {
+      return BaseController.extend("nauticalfe.controller.BusinessPartner", {
         onInit() {
         },
-        onBusinessPress: function() {
+        onBPDetailpress: function(){
           const oRouter = this.getOwnerComponent().getRouter();
-          oRouter.navTo("RouteBusinessPartner");
-      },
+          oRouter.navTo("RouteBPMasterDetails")
+        }
+     
       });
     }
   );
