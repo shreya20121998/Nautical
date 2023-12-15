@@ -27,17 +27,17 @@
                 <Button id="_IDGenButton13" icon="sap-icon://arrow-right" class="two"></Button>      
                 <Button id="_IDGenButton14"  text="UOM" width="22%" class="three"></Button>
                 <Button id="_IDGenButton15" icon="sap-icon://arrow-right" class="four"></Button>
-                <Button id="_IDGenButton16"  text="Cost Master" width="22%" class="five"></Button>
-                <Button id="_IDGenButton18"  text="Event Master" width="22%" class="one"></Button>
+                <Button id="_IDGenButton16"  text="Cost Master" width="22%" class="five" press="onCostMaster"></Button>
+                <Button id="_IDGenButton18"  text="Event Master" width="22%" class="one" press="onEventMaster"></Button>
                 <Button id="_IDGenButton17" icon="sap-icon://arrow-right" class="two"></Button>      
-                <Button id="_IDGenButton19"  text="Ref. Doc. Indicator" width="22%" class="three"></Button>
+                <Button id="_IDGenButton19"  text="Ref. Doc. Indicator" width="22%" class="three" press="onRefDocIndicator"></Button>
                 <Button id="_IDGenButton20" icon="sap-icon://arrow-right" class="four"></Button>
                 <Button id="_IDGenButton22" text="Business Partner" width="22%" class="five" press="onBusinessPress"></Button>
                 <Button id="_IDGenButton23"  text="Configure Release..." width="22%" class="one" press="onConfigPress"></Button>
                 <Button id="_IDGenButton21"  icon="sap-icon://arrow-right" class="two"></Button> 
                 <Button id="_IDGenButton24"  text="Port/Loc Upload" width="22%" class="three" press="onPortLocUpload"></Button>
                 <Button id="_IDGenButton25"  icon="sap-icon://arrow-right" class="four"></Button> 
-                <Button id="_IDGenButton26"  text="Port Master" width="22%" class="five"></Button>
+                <Button id="_IDGenButton26"  text="Port Master" width="22%" class="five"  press="onPortMaster"></Button>
                 <Button id="_IDGenButton27"  text="Port Upd" width="22%" class="one" press="onPortUpload"></Button>
                 <Button id="_IDGenButton28"  icon="sap-icon://arrow-right" class="two"></Button> 
                 <Button id="_IDGenButton29"  text="Country Master Upd" width="22%" class="three"></Button>

@@ -12,6 +12,14 @@ sap.ui.define(
           const oRouter = this.getOwnerComponent().getRouter();
           oRouter.navTo("RouteVesselType");
         },
+        onCostMaster:function(){
+          const oRouter = this.getOwnerComponent().getRouter();
+          oRouter.navTo("RouteCostMaster");
+        },
+        onEventMaster:function(){
+          const oRouter = this.getOwnerComponent().getRouter();
+          oRouter.navTo("RouteEventMaster");
+        },
         onPortLocMaster:function(){
           const oRouter = this.getOwnerComponent().getRouter();
           oRouter.navTo("RoutePortLocMaster");
@@ -36,6 +44,14 @@ sap.ui.define(
           const oRouter = this.getOwnerComponent().getRouter();
           oRouter.navTo("RouteMastApiUrl");
         },
+        onPortMaster:function(){
+          const oRouter = this.getOwnerComponent().getRouter();
+          oRouter.navTo("RoutePortMaster");
+        },
+        onRefDocIndicator:function(){
+          const oRouter = this.getOwnerComponent().getRouter();
+                oRouter.navTo("RouteRefDocIndicator");
+        }
 
 
 

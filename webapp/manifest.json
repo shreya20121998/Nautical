@@ -263,6 +263,34 @@
                     ]
                 },
                 {
+                    "name": "RouteCostMaster",
+                    "pattern": "CostMaster",
+                    "target": [
+                        "TargetCostMaster"
+                    ]
+                },
+                {
+                    "name": "RouteEventMaster",
+                    "pattern": "EventMaster",
+                    "target": [
+                        "TargetEventMaster"
+                    ]
+                },
+                {
+                    "name": "RoutePortMaster",
+                    "pattern": "PortMaster",
+                    "target": [
+                        "TargetPortMaster"
+                    ]
+                },
+                {
+                    "name": "RouteRefDocIndicator",
+                    "pattern": "RefDocIndicator",
+                    "target": [
+                        "TargetRefDocIndicator"
+                    ]
+                },
+                {
                     "name": "RouteBusinessPartner",
                     "pattern": "BusinessPartner",
                     "target": [
@@ -425,6 +453,34 @@
                     "clearControlAggregation": false,
                     "viewId": "TrCreateVoyagePlan",
                     "viewName": "TrCreateVoyagePlan"
+                },
+                "TargetCostMaster": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "CostMaster",
+                    "viewName": "CostMaster"
+                },
+                "TargetEventMaster": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "EventMaster",
+                    "viewName":"EventMaster"
+                },
+                "TargetPortMaster": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "PortMaster",
+                    "viewName":"PortMaster"
+                },
+                "TargetRefDocIndicator": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "RefDocIndicator",
+                    "viewName":"RefDocIndicator"
                 },
                 "TargetBusinessPartner": {
                     "viewType": "XML",
