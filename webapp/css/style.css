@@ -561,7 +561,11 @@ Table{
 .header{
     background-color: black;
     color: white; 
-} 
+}
+.customHeaderButton{
+    background-color: black;
+    color: white;
+}
 
 
 

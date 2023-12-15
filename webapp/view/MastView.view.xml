@@ -13,19 +13,19 @@
 
                 <ObjectListItem id="_IDGenObjectListItem1"  intro="Selection Options" ></ObjectListItem>
 
-                <Button id="_IDGenButton2"  text="Voyage Type"  width="22%" class="one"></Button>
+                <Button id="_IDGenButton2"  text="Voyage Type"  width="22%" class="one" press="onVoyageType"></Button>
                 <Button id="_IDGenButton3"  icon="sap-icon://arrow-right" class="two"></Button>      
-                <Button id="_IDGenButton4"   text="Vessel Type" width="22%" class="three" press="onVesselPress"></Button>
+                <Button id="_IDGenButton4"   text="Vessel Type" width="22%" class="three" press="onVesselType"></Button>
                 <Button id="_IDGenButton5"  icon="sap-icon://arrow-right" class="four"></Button>      
-                <Button id="_IDGenButton6"   text="Currency" width="22%" class="five"></Button>
-                <Button id="_IDGenButton7"  text="Class Master" width="22%" class="one"></Button>
+                <Button id="_IDGenButton6"   text="Currency" width="22%" class="five" press="onCurrencyType"></Button>
+                <Button id="_IDGenButton7"  text="Class Master" width="22%" class="one" press="onClassMaster"></Button>
                 <Button id="_IDGenButton8"  icon="sap-icon://arrow-right" class="two"></Button>
-                <Button id="_IDGenButton10"  text="Bid Master" width="22%" class="three"></Button>
+                <Button id="_IDGenButton10"  text="Bid Master" width="22%" class="three" press="onBidMaster"></Button>
                 <Button id="_IDGenButton9"  icon="sap-icon://arrow-right" class="four"></Button>      
                 <Button id="_IDGenButton11"   text="Port/Loc Master" width="22%" class="five" press="onPortLocMaster"></Button>
-                <Button id="_IDGenButton12"  text="Route Master" width="22%" class="one"></Button>
+                <Button id="_IDGenButton12"  text="Route Master" width="22%" class="one" press="onRouterMaster"></Button>
                 <Button id="_IDGenButton13" icon="sap-icon://arrow-right" class="two"></Button>      
-                <Button id="_IDGenButton14"  text="UOM" width="22%" class="three"></Button>
+                <Button id="_IDGenButton14"  text="UOM" width="22%" class="three" press="onUoM"></Button>
                 <Button id="_IDGenButton15" icon="sap-icon://arrow-right" class="four"></Button>
                 <Button id="_IDGenButton16"  text="Cost Master" width="22%" class="five" press="onCostMaster"></Button>
                 <Button id="_IDGenButton18"  text="Event Master" width="22%" class="one" press="onEventMaster"></Button>
@@ -40,14 +40,14 @@
                 <Button id="_IDGenButton26"  text="Port Master" width="22%" class="five"  press="onPortMaster"></Button>
                 <Button id="_IDGenButton27"  text="Port Upd" width="22%" class="one" press="onPortUpload"></Button>
                 <Button id="_IDGenButton28"  icon="sap-icon://arrow-right" class="two"></Button> 
-                <Button id="_IDGenButton29"  text="Country Master Upd" width="22%" class="three"></Button>
+                <Button id="_IDGenButton29"  text="Country Master Upd" width="22%" class="three" press="onCountryMasterUpd"></Button>
                 <Button id="_IDGenButton30"  icon="sap-icon://arrow-right" class="four"></Button> 
-                <Button id="_IDGenButton31"  text="Country Master" width="22%" class="five"></Button>
+                <Button id="_IDGenButton31"  text="Country Master" width="22%" class="five" press="onCountryMaster"></Button>
                 <Button id="_IDGenButton32"  text="API URL" width="22%" class="one" press="onApiurl"></Button>
                 <Button id="_IDGenButton33"  icon="sap-icon://arrow-right" class="two"></Button>
-                <Button id="_IDGenButton34"  text="Marine Path Upd" width="22%" class="three"></Button>
+                <Button id="_IDGenButton34"  text="Marine Path Upd" width="22%" class="three" press="onMarinePathUpd"></Button>
                 <Button id="_IDGenButton35"  icon="sap-icon://arrow-right" class="four"></Button>
-                <Button id="_IDGenButton36"  text="Marine Dis Upd" width="22%" class="five"></Button>
+                <Button id="_IDGenButton36"  text="Marine Dis Upd" width="22%" class="five" press="onMarineDisUpd"></Button>
             </Panel>   
 
             <Panel id="_IDGenPanel2"  class="panel1">

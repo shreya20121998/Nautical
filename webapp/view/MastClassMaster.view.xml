@@ -2,13 +2,16 @@
     xmlns:tnt="sap.tnt"
     xmlns:form="sap.ui.layout.form"
     xmlns:l="sap.ui.layout"
-    controllerName="nauticalfe.controller.VesselType"
+    controllerName="nauticalfe.controller.MastClassMaster"
     xmlns="sap.m"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns:core="sap.ui.core"
     displayBlock="true"
+    xmlns:core="sap.ui.core"
 >
-    <Page id="_IDGenPage1">
+    <Page
+        id="_IDGenPage1"
+      
+    >
         <headerContent>
             <!-- Your header content goes here -->
             <Bar class="customHeader">
@@ -19,16 +22,18 @@
                         press="onBackPress"
                     />
                     <Image
-                        src="./images/Ingenx.png"
+                        src="../images/Ingenx.png"
                         height="2rem"
                         width="6rem"
+                        
                     />
                     <Text
                         class="textBid"
-                        text="Change View : Master Details for Cargo : Overview"
+                        text="Change View : Class Voyage Master: Overview"
                     />
                 </contentLeft>
                 <contentRight>
+                    <SearchField id="searchField" width="75%" search="onSearch" />
                     <core:Icon
                         src="sap-icon://search"
                         class="size1"
@@ -53,11 +58,11 @@
         <content>
            
             <Panel id="_IDGenPanel1">
-                <Dialog
+            <Dialog
                             id="helloDialog"
                             resizable="true"
                             draggable="true"
-                            title="Create Cargo Type"
+                            title="Create Voyage Class"
                         >
                             <VBox
                                 id="_IDGenVBox1"
@@ -66,18 +71,18 @@
                                 <Label
                                     id="_IDGenLabel1"
                                     labelFor="charterCode"
-                                    text="Cargo Code"
+                                    text="Value"
                                 />
                                 <Input
                                     id="charterCode"
                                     placeholder="code"
                                     width="190px"
-                                    maxLength="4"
+                                    maxLength="3"
                                 />
                                 <Label
                                     id="_IDGenLabel2"
                                     labelFor="charterDesc"
-                                    text="Cargo Description"
+                                    text="Field Description"
                                 />
                                 <Input
                                     id="charterDesc"
@@ -110,7 +115,7 @@
                             id="helloDialog2"
                             resizable="true"
                             draggable="true"
-                            title="Update Cargo Type"
+                            title="Update Voyage Class"
                         >
                             <VBox
                                 id="_IDGenVBox2"
@@ -119,19 +124,19 @@
                                 <Label
                                     id="_IDGenLabel12"
                                     labelFor="charterCode2"
-                                    text="Cargo Code"
+                                    text="Value"
                                 />
                                 <Input
                                     id="charterCode2"
                                     placeholder="code"
                                     width="190px"
-                                    maxLength="4"
+                                    maxLength="3"
                                     editable="false"
                                 />
                                 <Label
                                     id="_IDGenLabel3"
                                     labelFor="charterDesc2"
-                                    text="Cargo Description"
+                                    text="Field Description"
                                 />
                                 <Input
                                     id="charterDesc2"
@@ -141,13 +146,13 @@
                             </VBox>
 
                             <footer>
-                                <Toolbar id="_IDGenToolbar1">
+                                <Toolbar id="_IDGenToolbar1" design="Solid">
                                     <ToolbarSpacer id="_IDGenToolbarSpacer1" />
                                     <Button
                                         id="_IDGenButton7"
                                         type="Emphasized"
                                         press=".onUpdate"
-                                        text="update"
+                                        text="Update"
                                         class="sapUiTinyMarginTop sapUiTinyMarginBottom"
                                     />
                                     <Button
@@ -160,7 +165,6 @@
                                 </Toolbar>
                             </footer>
                         </Dialog>
-                
                 <Bar
                     id="_IDGenBar1"
                     class="_IDGenBar1"
@@ -201,29 +205,23 @@
                 <Table
                     id="createTypeTable"
                     mode="MultiSelect"
-                    items="{/CarTypeSet}"
+                    items="{/CurTypeSet}"
                     updateFinished="onTableUpdateFinished"
                     selectionChange="selectedItems"
                     width="100%"
                 
                 >
                     <columns>
-                        <Column
-                            id="_IDGenColumn1"
-                        
-                        >
+                        <Column id="_IDGenColumn1">
                             <Text
                                 id="_IDGenText1"
-                                text="Cargo Type"
+                                text="Class Type"
                             />
                         </Column>
-                        <Column
-                            id="_IDGenColumn2"
-                            
-                        >
+                        <Column id="_IDGenColumn2">
                             <Text
                                 id="_IDGenText2"
-                                text="Cargo Description"
+                                text="Class Description"
                             />
                         </Column>
                     </columns>
@@ -232,12 +230,12 @@
                             <cells>
                                 <Text
                                     id="_IDGenInput1"
-                                    text="{Carcd}"
+                                    text="{Navoycur}"
                                     
                                 />
                                 <Text
                                     id="_IDGenInput2"
-                                    text="{Cardes}"
+                                    text="{Navoygcurdes}"
                                     
                                 />
                                 <Button
