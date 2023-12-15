@@ -5,13 +5,14 @@ sap.ui.define(
     function(BaseController) {
       "use strict";
   
-      return BaseController.extend("nauticalfe.controller.BPMasterDetails", {
+      return BaseController.extend("nauticalfe.controller.VendorDataSyncing", {
         onInit() {
         },
         // show:function(){
         //   this.getView().byId("searchBtn").setVisible(true)
           
         // },
+
         
         
       });

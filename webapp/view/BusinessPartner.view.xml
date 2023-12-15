@@ -11,8 +11,10 @@
                 <Button id="_IDGenButton1" text="BP Master Details" class="Trans" width="30%"
                  icon="sap-icon://request" press="onBPDetailpress"></Button>
 
-                <Button id="_IDGenButton2" text="Vendor Data Syncing" press="MastData" class="Mastr" width="30%" icon="sap-icon://visits"></Button>
-            </Panel>   
+                <Button id="_IDGenButton2" text="Vendor Data Syncing" press="onVendorDataPress" class="Mastr" width="30%" icon="sap-icon://visits"></Button>
+            
+            </Panel> 
+
         </VBox>
     </Page>
 </mvc:View>

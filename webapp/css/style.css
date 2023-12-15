@@ -91,7 +91,7 @@
     background-color: rgba(234, 144, 130, 0.299);
 }
 
-.sapMColumnHeader .sapMText {
+.sapMText {
     font-size: 12px;
 }
 /*---------------------------------------------------------------------------------------------------------*/
@@ -170,6 +170,7 @@
 .sapMColumnHeader {
     background-color: rgb(242, 242, 242);
     border: 1px solid rgb(187, 186, 186);
+   
 }
 #application-nauticalfe-display-component---BidCont--table-tblHeadNav{
     background-color: rgb(240, 235, 235);
@@ -476,7 +477,93 @@ Table{
 
 
 
- /* document upload */
+/* Business Partner Details Page */
+
+.EnterDetailsHeader{
+    margin: 2%;
+    font-size: 18px;
+    border-bottom: 1px solid rgb(185, 182, 182);
+    width: 80%;
+}
+.BPdetailsContent{
+    margin-left: 35%;
+}
+.executeBtn{
+    margin-left: 70rem;
+    margin-top: 22rem;
+}
+/* config release strategy */
+
+.configHeading{
+    margin-top: 2%;
+    font-size: 20px;
+    margin-left: 1%;
+    border-bottom: 1px solid rgb(183, 180, 180);
+    width: 40%;
+}
+.mgbtn{
+    margin-top: 1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 
+/* Master data pages css by anurag */
+
+.customHeader{
+    background-color: black;
+}
+.textBid{
+    color: white;
+}
+.exeBtn{
+    margin-top: 35%;
+}
+.masterFileUpload{
+    margin-left: 250px;
+    margin-top: 70px;
+}
+
+.masterheadings{
+    margin-left: 40px;
+    margin-top:30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.mastertables{
+    margin-top: 5px ;
+}
+
+.masteroptionsfooter{
+    margin-top: 400px;
+    margin-left: 1150px;
+}
+
+.masterbuttonsalign{
+    padding: 10px 15px;
+    margin-right: 10px;
+}
+
+/* file upload dialog box css */
+.MastDialogButtonAlign{
+    margin-top: 40px;
+    margin-left: 270px;
+}
+.header{
+    background-color: black;
+    color: white; 
+} 
+
+
 
 
  

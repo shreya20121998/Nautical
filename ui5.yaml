@@ -15,6 +15,23 @@ server:
             - /resources
             - /test-resources
           url: https://ui5.sap.com
+        backend:
+          - path: /sap
+            url: http://ingenxserver:8001/
+            client: '150'
+            destination: ingenx_server
+          - path: /sap
+            url: http://ingenxserver:8001/
+            client: '150'
+            destination: ingenx_server
+          - path: /sap/opu/odata/nauti/NAUTICALCV_SRV
+            url: http://ingenxserver:8001/
+            client: '150'
+            destination: ingenx_server
+          - path: /sap/opu/odata/nauti/CONTROLLER_SRV
+            url: http://ingenxserver:8001/
+            client: '150'
+            destination: ingenx_server
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:

@@ -29,6 +29,23 @@ server:
       afterMiddleware: compression
       configuration:
         ignoreCertError: false # If set to true, certificate errors will be ignored. E.g. self-signed certificates will be accepted
+        backend:
+          - path: /sap
+            url: http://ingenxserver:8001/
+            client: '150'
+            destination: ingenx_server
+          - path: /sap
+            url: http://ingenxserver:8001/
+            client: '150'
+            destination: ingenx_server
+          - path: /sap/opu/odata/nauti/NAUTICALCV_SRV
+            url: http://ingenxserver:8001/
+            client: '150'
+            destination: ingenx_server
+          - path: /sap/opu/odata/nauti/CONTROLLER_SRV
+            url: http://ingenxserver:8001/
+            client: '150'
+            destination: ingenx_server
     - name: fiori-tools-preview
       afterMiddleware: fiori-tools-appreload
       configuration:

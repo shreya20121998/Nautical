@@ -1,0 +1,40 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:cards="sap.f.cards" xmlns:tnt="sap.tnt" controllerName="nauticalfe.controller.VendorDataSyncing"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+
+        <ScrollContainer id="BPDetailsScroll"  >
+            <Bar id="_IDGenBar1" class="_IDGenBar1">
+                <contentLeft>
+                    <Button id="_IDGenButton1" text="Save as Variant"></Button>
+                    <Button id="button" icon="sap-icon://slim-arrow-down" iconFirst="false" text="More" ariaHasPopup="Menu"/>
+                </contentLeft>
+                <contentRight>
+                    <Button text="Exit" press="MastPage"></Button>
+                </contentRight>
+            </Bar>
+            <Text id="EnterDetailsId" text="Enter Details" class="EnterDetailsHeader"></Text>
+            <HBox id="_IDGenHBox1" alignItems="Center" class="BPdetailsContent">
+                <Label id="_IDGenLabel1" text="Vendor No:" required="true"></Label>
+                <!-- <Input id="_IDGenInput1" width="80%" required="true"></Input>
+                <Button id="searchBtn" icon="../images/search.png"  class="searchIcon"></Button> -->
+                <SearchField id="searchField" width="60%" search=".onFilterPosts" />
+                <Label id="_IDGenLabel2" text="To:" required="true"></Label>
+                <!-- <Input id="_IDGenInput1" width="80%" required="true"></Input>
+                <Button id="searchBtn" icon="../images/search.png"  class="searchIcon"></Button> -->
+                <SearchField id="searchField2" width="60%" search=".onFilterPosts" />
+            </HBox>
+            <Bar class="exeBtn" >
+            <contentRight>
+                <HBox>
+                    <Button text="Execute"></Button>
+                </HBox>
+            </contentRight>
+        </Bar>
+        </ScrollContainer>
+        
+
+
+
+    <!-- </Page> -->
+</mvc:View>

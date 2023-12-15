@@ -11,6 +11,10 @@ sap.ui.define(
         onBPDetailpress: function(){
           const oRouter = this.getOwnerComponent().getRouter();
           oRouter.navTo("RouteBPMasterDetails")
+        },
+        onVendorDataPress: function() {
+          const oRouter = this.getOwnerComponent().getRouter();
+          oRouter.navTo("RouteVendorDataSyncing");
         }
      
       });
