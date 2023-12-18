@@ -187,6 +187,7 @@
 /* for bid obj page*/
 .bpanel1{
     width: 20rem ;
+    
 }
 
 .vPanel{
@@ -194,6 +195,7 @@
     flex-direction: row;
     gap: 5rem;
     flex-wrap: wrap;
+    /* margin-top: -2%; */
 }
 
 .text1{
@@ -243,21 +245,23 @@
 .panel{
     padding: 40px;
 }
-.panel1{
-  margin-top: 8%;
+
+.mastrimg{
+    margin-top: 7%;
+    position: fixed;
 }
 .Trans{
-    padding: 10%; margin: 10% 15%;
+     margin: 10% 15%;
 }
 .Mastr{
-    padding: 10%; margin: 10% 15%;
+    margin: 10% 15%;
 }
 
-.nauticalImg{
+/* .nauticalImg{
     max-width: 280px !important;
     height: 270px !important;
     margin-top: 10%;
-}
+} */
 
 .dashPanel2{
     padding: 1rem;  
@@ -265,9 +269,9 @@
 .sapUiSizeCompact .sapMBtnInner {
     border-radius: 4px;
 }
-.mastrimg{
+/* .mastrimg{
     margin-top: 10% !important;
-}
+} */
 
 /*transaction data css*/
 .voy,.right,.FS {
@@ -275,7 +279,8 @@
 }
 /*master data css*/
 .one,.two,.three,.four,.five{
-    margin: 2%; margin-top: 7%;
+    margin: 2%; margin-top: 5%;
+    
 }
 /*for nautical image*/
 /* .sapMFlexItemAlignAuto {
@@ -524,9 +529,9 @@ Table{
 .textBid{
     color: white;
 }
-.exeBtn{
+/* .exeBtn{
     margin-top: 35%;
-}
+} */
 .masterFileUpload{
     margin-left: 250px;
     margin-top: 70px;
@@ -543,15 +548,15 @@ Table{
     margin-top: 5px ;
 }
 
-.masteroptionsfooter{
+/* .masteroptionsfooter{
     margin-top: 400px;
     margin-left: 1150px;
-}
+} */
 
-.masterbuttonsalign{
+/* .masterbuttonsalign{
     padding: 10px 15px;
     margin-right: 10px;
-}
+} */
 
 /* file upload dialog box css */
 .MastDialogButtonAlign{
@@ -567,6 +572,10 @@ Table{
     color: white;
 }
 
+/* for all icon */
+.sapMBtnIcon {
+    color: rgb(194, 65, 65);
+}
 
 
 

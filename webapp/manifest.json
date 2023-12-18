@@ -242,17 +242,17 @@
                     ]
                 },
                 {
-                    "name": "TrCreateVoyage",
+                    "name": "TrCaptureVoyage",
                     "pattern": "cvoy",
                     "target": [
-                        "TargetTrCreateVoyage"
+                        "TargetTrCaptureVoyage"
                     ]
                 },
                 {
-                    "name": "TrCreateVoyagePlan",
+                    "name": "TrCaptureVoyagePlan",
                     "pattern": "cvoyPlan",
                     "target": [
-                        "TargetTrCreateVoyagePlan"
+                        "TargetTrCaptureVoyagePlan"
                     ]
                 },
                 {
@@ -512,19 +512,19 @@
                     "viewId": "TrVoyageOptions",
                     "viewName": "TrVoyageOptions"
                 },
-                "TargetTrCreateVoyage": {
+                "TargetTrCaptureVoyage": {
                     "viewType": "XML",
                     "transition": "slide",
                     "clearControlAggregation": false,
-                    "viewId": "TrCreateVoyage",
-                    "viewName": "TrCreateVoyage"
+                    "viewId": "TrCaptureVoyage",
+                    "viewName": "TrCaptureVoyage"
                 },
-                "TargetTrCreateVoyagePlan": {
+                "TargetTrCaptureVoyagePlan": {
                     "viewType": "XML",
                     "transition": "slide",
                     "clearControlAggregation": false,
-                    "viewId": "TrCreateVoyagePlan",
-                    "viewName": "TrCreateVoyagePlan"
+                    "viewId": "TrCaptureVoyagePlan",
+                    "viewName": "TrCaptureVoyagePlan"
                 },
                 "TargetVoyageType": {
                     "viewType": "XML",

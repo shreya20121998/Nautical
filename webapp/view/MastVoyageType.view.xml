@@ -16,16 +16,16 @@
                     <Button
                         class="customHeaderButton"
                         icon="sap-icon://nav-back"
-                        press="onBackPress"
+                        press="backPress"
                     />
                     <Image
-                        src="../images/Ingenx.png"
+                        src="../images/ignxlogo.png"
                         height="2rem"
-                        width="6rem"
+                        width="5rem"
                     />
                     <Text
                         class="textBid"
-                        text="Change View :Master Details for Voyage: Overview"
+                        text="Change View Voyage Type Master Table: Overview"
                     />
                 </contentLeft>
                 <contentRight>
@@ -198,7 +198,7 @@
                         <Button text="Display" />
                         <Button
                             text="Exit"
-                            press="MastPage"
+                            press="onExit"
                         />
                     </contentRight>
                 </Bar>
@@ -250,12 +250,12 @@
             </Panel>
         </content>
         <footer>
-      <OverflowToolbar design="Auto">
-      <ToolbarSpacer />
-      <Button text="Save" type="Neutral"></Button>
-      <Button text="Cancel" type="Negative" ></Button>
-      </OverflowToolbar>
-    </footer>
+            <OverflowToolbar design="Auto">
+            <ToolbarSpacer />
+            <Button text="Save" type="Neutral"></Button>
+            <Button text="Cancel" type="Negative" ></Button>
+            </OverflowToolbar>
+        </footer>
     </Page>
 
     <!--scrollbar added-->

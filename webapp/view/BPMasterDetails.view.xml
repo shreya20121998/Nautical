@@ -2,7 +2,7 @@
     xmlns:html="http://www.w3.org/1999/xhtml"
     xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
     xmlns="sap.m">
-
+    <Page >
         <Bar id="_IDGenBar1" class="_IDGenBar1">
             <contentLeft>
                 <Button id="_IDGenButton1" text="Save as Variant"></Button>
@@ -15,16 +15,46 @@
         <Text id="EnterDetailsId" text="Enter Details" class="EnterDetailsHeader"></Text>
         <HBox id="_IDGenHBox1" alignItems="Center" class="BPdetailsContent">
             <Label id="_IDGenLabel1" text="Vendor No:" required="true"></Label>
-            <Input id="_IDGenInput1" width="80%" required="true"></Input>
-            <Button id="searchBtn" icon="../images/search.png"  class="searchIcon"></Button>
+            <Input id="Input" width="80%" required="true"></Input>
+            <Button id="searchBtn" icon="../images/search.png"  class="searchIcon"  press="onSearch"></Button>
+            <Table
+                width="100%"
+                class="mastertables"
+                
+                visible="{/tableVisible}"
+                id="firstTableId"
+                mode="MultiSelect"
+                selectionChange="onTableSelectionChange"
+            >
+      <!-- Columns and ColumnListItem as before -->
+
+                    <columns>
+                        <Column id="_IDGenColumn1">
+                        <Label id="_IDnLabel1" text="Port Name" />
+                        </Column>
+                        <Column id="_IDGenColumn2">
+                        <Label id="_IDGenLabel2" text="Country" />
+                        </Column>
+                    </columns>
+                     <ColumnListItem id="_IDGenColumnListItem1">
+                            <cells>
+                            <Text id="_IDGenText5" text="hello" />
+                            <Text id="_IDGenText3" text="hii" />
+                            </cells>
+                    </ColumnListItem>
+            </Table>
+  
+
+
             <!-- <SearchField id="searchField" width="60%" search=".onFilterPosts" /> -->
         </HBox>
-        <Bar id="_IDGenBar2" class="exeBtn" >
-        <contentRight>
-            <HBox id="_IDGenHBox2" class="masteroptionsfooter">
-                <Button id="_IDGenButton3" text="Execute" class="masterbuttonsalign"></Button>
-            </HBox>
-        </contentRight>
-        </Bar>
+
+        <footer>
+            <OverflowToolbar design="Auto">
+            <ToolbarSpacer />
+            <Button text="Execute" ></Button>
+            </OverflowToolbar>
+        </footer>
+    </Page>
  
 </mvc:View>

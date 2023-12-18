@@ -10,7 +10,7 @@ sap.ui.define([
     function (Controller,MessageToast) {
         "use strict";
  
-        return Controller.extend("nauticalfe.controller.TrCreateVoyagePlan", {
+        return Controller.extend("nauticalfe.controller.TrCaptureVoyagePlan", {
             onInit: function () {
                
                

@@ -1,7 +1,7 @@
 <mvc:View xmlns:tnt="sap.tnt"
 xmlns:form="sap.ui.layout.form"
  xmlns:l="sap.ui.layout"
- controllerName="nauticalfe.controller.TrCreateVoyage"
+ controllerName="nauticalfe.controller.TrCaptureVoyage"
     xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
     <Text text="Selection Option" id="HeadOptions"/>
     <VBox id="VoyageOperations">

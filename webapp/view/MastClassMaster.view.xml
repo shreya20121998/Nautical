@@ -251,11 +251,11 @@
             </Panel>
         </content>
         <footer>
-        <OverflowToolbar design="Auto">
-      <ToolbarSpacer />
-      <Button text="Save" type="Neutral"></Button>
-      <Button text="Cancel" type="Negative" ></Button>
-      </OverflowToolbar>
+            <OverflowToolbar design="Auto">
+            <ToolbarSpacer />
+            <Button text="Save"></Button>
+            <Button text="Cancel"></Button>
+            </OverflowToolbar>
         </footer>
     </Page>
 

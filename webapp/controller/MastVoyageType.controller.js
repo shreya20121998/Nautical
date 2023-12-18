@@ -7,9 +7,10 @@ sap.ui.define(
       "sap/ui/model/odata/v4/Context",
       "sap/ui/model/odata/v4/ODataContextBinding",
       "sap/m/MessageBox",
-      "sap/m/MessageToast"
+      "sap/m/MessageToast",
+      "sap/ui/core/routing/History"
     ],
-    function (BaseController, ODataModel, Context, MessageBox, ODataContextBinding, MessageToast) {
+    function (BaseController, ODataModel, Context, MessageBox, ODataContextBinding, MessageToast,History) {
       "use strict";
       let aSelectedIds = [];
       var emptyrowAdded=0;
@@ -22,10 +23,20 @@ sap.ui.define(
   
         },
         // back button 
-        onBackPress: function () {
+        onExit: function () {
           const oRouter = this.getOwnerComponent().getRouter();
-          oRouter.navTo("RouteMasterDashboard",{},true);
-          
+          oRouter.navTo("MastView"); 
+        },
+        backPress:function(){
+          const oHistory = History.getInstance();
+          const sPreviousHash = oHistory.getPreviousHash();
+ 
+          if (sPreviousHash !== undefined) {
+            window.history.go(-1);
+          } else {
+            const oRouter = this.getOwnerComponent().getRouter();
+            oRouter.navTo("MastView", {}, true);
+          }
         },
         // testing v2  api creat operation
 

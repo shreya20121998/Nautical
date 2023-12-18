@@ -7,7 +7,7 @@ sap.ui.define([
     function (Controller) {
         "use strict";
  
-        return Controller.extend("nauticalfe.controller.CreateVoyage", {
+        return Controller.extend("nauticalfe.controller.TrCaptureVoyage", {
             onInit: function () {
                 var voyage = this.getView().byId("VoyageOperations")
                 voyage.addStyleClass("VoyageOperations")
@@ -17,7 +17,7 @@ sap.ui.define([
             },
             voyagePlan:function(){
                 const oRouter = this.getOwnerComponent().getRouter();
-                oRouter.navTo("TrCreateVoyagePlan")  
+                oRouter.navTo("TrCaptureVoyagePlan")  
             }
         });
     });
