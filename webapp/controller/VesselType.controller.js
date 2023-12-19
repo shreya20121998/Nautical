@@ -19,6 +19,10 @@ sap.ui.define(
 
 
       },
+      onExit: function(){
+        const oRouter = this.getOwnerComponent().getRouter();
+        oRouter.navTo("MastView")
+      },
        // back button 
        onBackPress: function () {
         const oRouter = this.getOwnerComponent().getRouter();

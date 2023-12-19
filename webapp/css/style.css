@@ -509,8 +509,35 @@ Table{
 .mgbtn{
     margin-top: 1%;
 }
+/* save as variant tab */
 
-
+.sapMCb .sapMLabel {
+    margin-top: -1.5%;
+}
+.LabelInput1{
+    margin-top: 2%;
+    margin-left: 5%;
+}
+.LabelInput2{
+    margin-left: 5%;
+}
+#application-nauticalfe-display-component---MastSaveAsVariant--_IDGenColumn3-ah {
+    height: 16px;
+}
+.btnIcon{
+    margin: 5px;
+}
+.tableHeading{
+    font-size: 16px;
+    margin-top: 1%;
+}
+.txtInfoBox{
+    margin: 4%;
+}
+.boldText{
+    font-weight: bold;
+    font-size: 14px;
+}
 
 
 

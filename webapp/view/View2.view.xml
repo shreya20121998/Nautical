@@ -75,7 +75,7 @@ xmlns:form="sap.ui.layout.form"
         </FlexBox>
       
         <FlexBox id="_IDGenFlexBox3" >
-          <Button id="_IDGenButton1" class="clr tablebtn" text="Create Voyage" press="onChangeVoyage" />
+          <Button id="_IDGenButton1" class="clr tablebtn" text="Create Voyage"  press="onChangeVoyage" />
           <Button id="_IDGenButton2" class="tablebtn" text="Freight Simulator" press="onCreateVoyage" />
           <Button id="_IDGenButton3" class="tablebtn" text="Calculate" />
           <Button id="_IDGenButton4" class="tablebtn" icon="sap-icon://refresh" />
@@ -83,7 +83,8 @@ xmlns:form="sap.ui.layout.form"
         
         
       </HBox>
-        <Table id="table" class="tableLayout" items="{Vdata>/voyageData}" growing="true" growingThreshold="10"  >
+      
+        <Table id="table" class="tableLayout" items="{Vdata>/voyageData}" growing="true" growingThreshold="10" width="100%" >
           <columns>
            <Column id="heading1" >
              <Text id="text1" text="Port Name"/>
@@ -135,10 +136,10 @@ xmlns:form="sap.ui.layout.form"
                <Input id="field6" value ="{Vdata>Sea Days}"/>
               <Input id="field7" value ="{Vdata>Port Days}"/>
               
-              <DatePicker id="DP4"	placeholder="Enter Date"	change="handleChange"	class="" width="auto" />
-                <TimePicker id="TP1" change="handleChange" liveChange="handleInput" displayFormat="HH:mm:ss"></TimePicker>
-              <DatePicker id="DP3"	placeholder="Enter Date"	change="handleChange"	class=""/>
-              <TimePicker id="TP2" change="handleChange" liveChange="handleInput" displayFormat="HH:mm:ss"></TimePicker>
+              <DatePicker id="DP4"	placeholder="Enter Date"	change="handleChange"	 width="auto" />
+                <TimePicker id="TP1" change="handleChange" liveChange="handleInput" formatPttern="HH:mm:ss"></TimePicker>
+              <DatePicker id="DP3"	placeholder="Enter Date"	change="handleChange"	/>
+              <TimePicker id="TP2" change="handleChange" liveChange="handleInput" formatPattern="HH:mm:ss"></TimePicker>
               
              </cells>
              

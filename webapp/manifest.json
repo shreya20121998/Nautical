@@ -292,6 +292,13 @@
                     ]
                 },
                 {
+                    "name": "RouteSaveAsVariant",
+                    "pattern": "SaveAsVariant",
+                    "target": [
+                        "TargetSaveAsVariant"
+                    ]
+                },
+                {
                     "name": "RouteCostMaster",
                     "pattern": "CostMaster",
                     "target": [
@@ -637,6 +644,13 @@
                     "clearControlAggregation": false,
                     "viewId": "MastPortUpload",
                     "viewName": "MastPortUpload"
+                },
+                "TargetSaveAsVariant": {
+                    "viewType": "XML",
+                    "transition": "slide",
+                    "clearControlAggregation": false,
+                    "viewId": "MastSaveAsVariant",
+                    "viewName": "MastSaveAsVariant"
                 },
                 "TargetMastApiUrl": {
                     "viewType": "XML",

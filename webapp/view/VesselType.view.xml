@@ -194,7 +194,7 @@
                         <Button text="Display" />
                         <Button
                             text="Exit"
-                            press="MastPage"
+                            press="onExit"
                         />
                     </contentRight>
                 </Bar>

@@ -153,9 +153,6 @@
        
             <Table width="100%" class="mastertables" visible="false" id="newTableId" mode="MultiSelect">
                 <columns>
-                    <Column width="30px">
-                        <Label text=" " />
-                    </Column>
                     <Column>
                         <Label text="Country" />
                     </Column>
@@ -186,7 +183,6 @@
                 </columns>
                 <ColumnListItem>
                     <cells>
-                        <CheckBox />
                         <Input value="" editable="true" id="Countryedit1"></Input>
                         <Input value="" editable="true" id="Countryedit2"></Input>
                         <Input value="" editable="true" id="Countryedit3"></Input>
